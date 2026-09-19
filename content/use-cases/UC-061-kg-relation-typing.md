@@ -1,0 +1,27 @@
+---
+id: "UC-061"
+title: "KG relationship and entity typing"
+summary: "Classify relationships and entity types when annotating knowledge graphs."
+category: "classification"
+primitives:
+  - "choice"
+source: "docs"
+source_urls:
+  - "https://docs.typesafe.ai/concepts/use-case-map.md"
+docs_related:
+  - "https://docs.typesafe.ai/concepts/use-case-map.md"
+---
+
+# KG relationship and entity typing
+
+Classify relationships and entity types when annotating knowledge graphs.
+
+**Category:** `classification`  
+**Primitives:** `choice`  
+**Source type:** `docs`
+
+## Citations
+- https://docs.typesafe.ai/concepts/use-case-map.md
+
+## Related docs
+- https://docs.typesafe.ai/concepts/use-case-map.md
