@@ -7,8 +7,7 @@
 
 ## Result
 
-- **Commit SHA (copy rewrite):** `5246ccf74aafb52464a7af1d1989066bb9c15c2d`
-- **Tip of main:** `5c597a067cd44b6e20c217155bbc653d598e8dc3`
+- **Primary copy commit:** `5246ccf74aafb52464a7af1d1989066bb9c15c2d`
 - `npm run build` passes
 - Pushed to `main` on `Btheriot83/jev-academy`
 - Copy rewritten with short sentences, everyday words, and one analogy per lesson
