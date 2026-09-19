@@ -2,43 +2,42 @@
 
 **Shipped:** 2026-09-19 PT  
 **Repo:** https://github.com/Btheriot83/jev-academy (`main`)  
-**Build:** `npm run build` succeeded (166 static routes)
+**Build:** `npm run build` succeeded (190 static routes)
 
 ## Counts
 | Metric | Value |
 |--------|------:|
-| New X-cited entries this pass | 35 |
-| Total X-cited | 40 |
+| Harvest posts in `_x-harvest-2026-09-19.json` | 25 |
+| Already present (skipped as dup) | 1 |
+| **New X-cited entries this pass** | **24** |
+| Total X-cited | 64 |
 | Other public (GitHub / directories) | 4 |
-| Open source flagged | 12 |
+| Open source flagged | 24 |
 | Docs-sourced (unchanged body set) | 91 |
-| **Total gallery ideas** | **135** |
+| **Total gallery ideas** | **159** |
 
 ## What changed
-- Merged `_browser-harvest.json` (~36 posts): verified each status via `api.fxtwitter.com`; skipped 1× 404 (`elberacasa`) and 1× idea-dup of UC-002 (`51bodila` jev-trader).
-- Added known OSS projects after `gh`/`WebFetch` verification:
-  - `browser-use/jev-ultrafast` (X: @gregpr07)
-  - `jkudish/jev-browser` (GitHub + systemonemodels.org)
-  - `w3cj/jev-chat`
-  - `dabit3/jev-experiments`
-  - `mkotlikov/jev-grug`
-- Gallery UI: minimal **Open source** badge + X / Public source badges; sort = X first (OSS within X first), then other, then docs.
-- `_x-harvest-2026-09-19.json` did **not** appear during this pass (nothing extra to merge).
+- Merged `_x-harvest-2026-09-19.json` (25 unique posts, 13 marked OSS in harvest).
+- De-duped by X status ID against existing `UC-*.md` / `catalog.json`.
+- Skipped 1 already-present: OpenAgents Rust Jev SDK port (`UC-130` / `2101096899755266306`).
+- Verified all 24 new statuses via `api.fxtwitter.com` (0× 404).
+- Added UC-136 … UC-159; rebuilt `INDEX.md` + `catalog.json` (X first, OSS within X first).
+- Synced into `site/content/use-cases/`; Open source badge behavior unchanged.
 
 ## Sample titles (new / OSS-forward)
-- Open-source Jev Ultrafast browser agent
-- Open-source jev-chat command bar (no text generation)
-- Open-source Jev Browser (MCP/CLI + Playwright)
-- Open-source jev-experiments (~20 latency demos)
-- Open-source jev-grug Choice word tournament chat
-- Open-source Rust port of Jev SDKs
-- Open-source unkillable Mario (Jev + microsandbox)
-- Fast context compaction scoring (ecosystem roundup)
-- Parallel support-ticket questions vs sequential LLM
-- Multilingual family-assistant routing
+- Jev Tweet Radar Chrome extension
+- CUA-S1-FORMS specialist / CUA-S1 open-source release
+- Realtime brain scanner
+- NotHotDog multimodal decision app
+- Stateful Jev / Jev One
+- Verdict OSS-Jev benchmark update
+- Laya open-source System One alternative
+- Jev practice speed harness
+- Kalshi trading lab
+- Classifier.dev over Jev for routing and RAG filters
 
 ## Commit
-- SHA: `3e1304743167ef4626a63ae263c204867e6aa04a`
+- SHA: _(filled after push)_
 
 ## Notes
 - Public sources only; no fabricated URLs/quotes; no endorsement claim; no API keys.

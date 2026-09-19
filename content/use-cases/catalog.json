@@ -1,9 +1,9 @@
 {
-  "count": 135,
-  "x_cited": 40,
+  "count": 159,
+  "x_cited": 64,
   "docs_sourced": 91,
   "other_sourced": 4,
-  "open_source": 12,
+  "open_source": 24,
   "cases": [
     {
       "id": "UC-005",
@@ -130,6 +130,203 @@
       "github_url": "https://github.com/browser-use/jev-ultrafast"
     },
     {
+      "id": "UC-136",
+      "title": "Jev Tweet Radar Chrome extension",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/WarlockTome/status/2101312284308172803",
+      "date": "2026-09-19",
+      "file": "UC-136-jev-tweet-radar-chrome-extension.md",
+      "one_line": "A MIT-licensed Chrome extension uses Jev probabilities while browsing X to estimate whether a post is worth interacting with; it supports user-defined interaction types and Chinese/Japanese/English.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/DDnim/jev-tweet-radar"
+    },
+    {
+      "id": "UC-141",
+      "title": "Expense categorization in an open-source app",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/BogdanDragomir/status/2101308008240177586",
+      "date": "2026-09-19",
+      "file": "UC-141-expense-categorization-in-an-open-source-app.md",
+      "one_line": "Jev is wired into an open-source expense app to automatically attribute categories to new expenses; the post includes a mobile UI demo.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true
+    },
+    {
+      "id": "UC-142",
+      "title": "CUA-S1-FORMS specialist",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/Shasko/status/2101310346107457929",
+      "date": "2026-09-19",
+      "file": "UC-142-cua-s1-forms-specialist.md",
+      "one_line": "CUA-S1-FORMS applies the System One pattern to forms: a 706,048-parameter, 2.8 MB MIT model chooses FILL/CHECK/CLICK/SKIP in one forward pass instead of making an LLM reason through the form.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/trycua/cua"
+    },
+    {
+      "id": "UC-143",
+      "title": "Jev in MobileWorld benchmark",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/kaserty/status/2101309961351684475",
+      "date": "2026-09-19",
+      "file": "UC-143-jev-in-mobileworld-benchmark.md",
+      "one_line": "MobileWorld reports a 389 ms median Jev API latency and 27.4% task success, contrasted with a 77.8% end-to-end Qwen3.8-Max reference; full trajectories and integration are planned in the benchmark repo.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/Tongyi-MAI/MobileWorld"
+    },
+    {
+      "id": "UC-144",
+      "title": "Realtime brain scanner",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/hbryg5/status/2101307817538044153",
+      "date": "2026-09-19",
+      "file": "UC-144-realtime-brain-scanner.md",
+      "one_line": "The realtime brain-scanner project reports 7/7 simple questions landing in its top three, 275 ms median response time, and about $0.00017 per call, while also publishing failures.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/ponyo877/jev-realtime-brain-scanner"
+    },
+    {
+      "id": "UC-145",
+      "title": "Stateful Jev / Jev One",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/whiskeyonvoid/status/2101307773950525905",
+      "date": "2026-09-19",
+      "file": "UC-145-stateful-jev-jev-one.md",
+      "one_line": "A stateful Jev implementation is demonstrated as a JavaScript library for stateful applications, with a video prompt asking Jev to take care of a place and choose actions over time.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/thezem/jev-one"
+    },
+    {
+      "id": "UC-147",
+      "title": "Jev practice speed harness",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/tubone24/status/2101306612657094696",
+      "date": "2026-09-19",
+      "file": "UC-147-jev-practice-speed-harness.md",
+      "one_line": "A public practice project lets developers obtain a Jev API key and test their own decision speed against Jev, turning the API into a repeatable latency practice harness.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/tubone24/jev-practice-speed/tree/main"
+    },
+    {
+      "id": "UC-148",
+      "title": "NotHotDog multimodal decision app",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/iamAnish/status/2101306035525107826",
+      "date": "2026-09-19",
+      "file": "UC-148-nothotdog-multimodal-decision-app.md",
+      "one_line": "The open-source nothotdog demo uses a vision model to write one sentence about an image and Jev to decide from that description; the author reports 1002 ms end-to-end versus 327 ms for the Jev half and displays both bars.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/anishsrinivasan/nothotdog"
+    },
+    {
+      "id": "UC-154",
+      "title": "Verdict OSS-Jev benchmark update",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/heman10x/status/2101311624212804050",
+      "date": "2026-09-19",
+      "file": "UC-154-verdict-oss-jev-benchmark-update.md",
+      "one_line": "The author reports that the fully open-source Verdict Jev beat both official TypeSafe Jev and Laya on their benchmark, following an earlier Verdict 1.0 score of 26.10% accuracy.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/Heman10x-NGU/Verdict-open-jev"
+    },
+    {
+      "id": "UC-155",
+      "title": "Curated Jev application catalog",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/aster_dev_/status/2101310922417709425",
+      "date": "2026-09-19",
+      "file": "UC-155-curated-jev-application-catalog.md",
+      "one_line": "Aster Dev points builders to a GitHub-curated list of Jev/System One applications, libraries, and resources for code-by-example exploration.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/devx-opensource/awesome-jev-anotiawang"
+    },
+    {
+      "id": "UC-156",
+      "title": "Laya open-source System One alternative",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/ZerouterAI/status/2101308238616772793",
+      "date": "2026-09-19",
+      "file": "UC-156-laya-open-source-system-one-alternative.md",
+      "one_line": "The post describes Laya as an open-source 421M non-autoregressive System One model with one-forward-pass probability decisions, no text generation, and local GPU execution, claiming faster and better-calibrated results than Jev.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true
+    },
+    {
+      "id": "UC-157",
+      "title": "CUA-S1 open-source release",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/trycua/status/2101014004927729737",
+      "date": "2026-09-18",
+      "file": "UC-157-cua-s1-open-source-release.md",
+      "one_line": "Cua announced CUA-S1 as a family of small, specialized System One computer-use models and open-sourced CUA-S1-FORMS as its first release.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/trycua/cua"
+    },
+    {
       "id": "UC-001",
       "title": "Remote browser agent loop (Stagehand + Jev)",
       "category": "routing",
@@ -142,8 +339,7 @@
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-002",
@@ -156,8 +352,7 @@
       "one_line": "Jev chooses buy or sell from an asset price feed each ~300ms Monad block and places post-only limits on Kuru\\u2019s on-chain book.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-003",
@@ -172,8 +367,7 @@
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-004",
@@ -186,8 +380,7 @@
       "one_line": "Wikiracing demo: among hundreds/thousands of outbound links, Choice picks the next page without hallucinating invented links.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-097",
@@ -200,8 +393,7 @@
       "one_line": "Japanese post sharing an image summary of how Jev (TypeSafe) could change bookkeeping outsourcing via constrained decisioning (#Jev).",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-099",
@@ -214,8 +406,7 @@
       "one_line": "Shows joint Jev choices for an email: billing vs security and urgent vs not urgent, with probabilities for combined outcomes.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-101",
@@ -230,8 +421,7 @@
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-102",
@@ -245,8 +435,7 @@
       "primitives": [
         "choice",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-103",
@@ -259,8 +448,7 @@
       "one_line": "Probed Jev Noul with independent-event probabilities to verify whether combined probabilities match expected composition.",
       "primitives": [
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-104",
@@ -274,8 +462,7 @@
       "primitives": [
         "choice",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-105",
@@ -288,8 +475,7 @@
       "one_line": "Approximates a System One interface using model logits, softmax, and logprobs to return typed probabilities.",
       "primitives": [
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-106",
@@ -302,8 +488,7 @@
       "one_line": "Uses a support message as state and asks in parallel whether it is urgent, which team handles it, and how frustrated the customer is.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-107",
@@ -316,8 +501,7 @@
       "one_line": "Feeds raw data and roughly 50 bundled questions to Jev so scores drive the next round of analysis until the important signals emerge.",
       "primitives": [
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-108",
@@ -332,8 +516,7 @@
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-109",
@@ -346,8 +529,7 @@
       "one_line": "Playground test chose Baby Blue vs Electric Blue vs Gray with probabilities in milliseconds; connects the pattern to Doom, automation, routing, and scoring.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-110",
@@ -360,8 +542,7 @@
       "one_line": "Describes Jev changing agent harnesses through model routing and AutoMode classification of tool-use risk.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-111",
@@ -376,8 +557,7 @@
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-112",
@@ -390,8 +570,7 @@
       "one_line": "Reports a builder demo classifying 1,891 ads in 19 seconds for $0.12 with Jev, and breaks down related decision-model experiments in an X Article.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-114",
@@ -405,8 +584,7 @@
       "primitives": [
         "choice",
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-115",
@@ -421,8 +599,7 @@
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-116",
@@ -436,8 +613,7 @@
       "primitives": [
         "choice",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-117",
@@ -451,8 +627,7 @@
       "primitives": [
         "noul",
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-118",
@@ -466,8 +641,7 @@
       "primitives": [
         "choice",
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-119",
@@ -480,8 +654,7 @@
       "one_line": "Ran Jev against the 50 most-used macOS Siri commands and found median requests nearly 5x faster including tool calls.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-120",
@@ -495,8 +668,7 @@
       "primitives": [
         "choice",
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-121",
@@ -509,8 +681,7 @@
       "one_line": "Notes Jev can classify text-only PDFs quickly, while PDFs with images/charts still require full OCR first.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-122",
@@ -523,8 +694,7 @@
       "one_line": "Uses Jev to rank all visible anchors and choose the next click, with harness instructions steering it toward the goal.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-123",
@@ -537,8 +707,7 @@
       "one_line": "Reports success using a Jev repo example to scan for cheap flights across a large time window.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-124",
@@ -551,8 +720,7 @@
       "one_line": "Ran Jev on Loon family-assistant routing tests in English, French, and Arabic, achieving 98%, 100%, and 92% respectively at 164ms median.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-126",
@@ -565,8 +733,7 @@
       "one_line": "Demoed Jev in a typeahead UI that predicts what to update before the user finishes typing.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-127",
@@ -579,8 +746,7 @@
       "one_line": "Plans to integrate Jev with Qdrant as a small, specific decision model.",
       "primitives": [
         "choice"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-128",
@@ -593,1353 +759,177 @@
       "one_line": "Built a SQL predicate, jev_bool(body, 'Is this customer angry?'), for typed natural-language filtering of tickets without embeddings or an LLM writing SQL.",
       "primitives": [
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
-      "id": "UC-006",
-      "title": "Semantic search replace/supplement embeddings",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-006-rag-semantic-search.md",
-      "one_line": "Replace or supplement embeddings in RAG with semantic search, scoring, and ranking over candidates.",
-      "primitives": [
-        "score",
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-007",
-      "title": "Query\\u2013candidate relevance scoring",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-007-query-candidate-relevance.md",
-      "one_line": "Score how well each retrieved candidate answers the query before generation.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-008",
-      "title": "Pairwise result reranking",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-008-pairwise-rerank.md",
-      "one_line": "Rerank shortlists with pairwise comparisons using TypeSafe questions.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-009",
-      "title": "Cross-encode query and candidate",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-009-cross-encode-precision.md",
-      "one_line": "Cross-encode query+candidate for higher precision than bi-encoders alone.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-010",
-      "title": "Select useful context for downstream AI",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-010-select-useful-context.md",
-      "one_line": "Pick which snippets are useful enough to pass into an LLM or agent step.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-011",
-      "title": "Systematic review paper screening",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-011-systematic-review-screening.md",
-      "one_line": "Screen papers against inclusion/exclusion criteria for systematic reviews.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-012",
-      "title": "Qualitative theme labeling",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-012-qual-theme-labeling.md",
-      "one_line": "Label interview transcripts, surveys, and field notes with predefined themes.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-013",
-      "title": "Claim\\u2013citation support check (science)",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-013-science-citation-support.md",
-      "one_line": "Check whether cited passages support claims in manuscripts and summaries.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-014",
-      "title": "Flag missing methodological details",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-014-missing-methods-flag.md",
-      "one_line": "Flag missing controls, dataset descriptions, and experimental settings.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-015",
-      "title": "Research knowledge-graph entity linking",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-015-research-kg-linking.md",
-      "one_line": "Identify entities and relationships across papers linking findings to passages.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-016",
-      "title": "Custom LLM model router",
+      "id": "UC-137",
+      "title": "Jev as agent/model router",
       "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-016-custom-llm-router.md",
-      "one_line": "Build a router that chooses which LLM receives each prompt using Jev.",
+      "source": "x",
+      "primary_url": "https://x.com/Zain_qurashi_/status/2101312428256505860",
+      "date": "2026-09-19",
+      "file": "UC-137-jev-as-agent-model-router.md",
+      "one_line": "For daily product, research, content, and ops agents, the proposed shipped pattern keeps an LLM for research/writing/coding while Jev chooses the agent, model, or escalation path.",
       "primitives": [
         "choice",
-        "score"
-      ],
-      "open_source": false
+        "noul"
+      ]
     },
     {
-      "id": "UC-017",
-      "title": "Intent and domain classification for routing",
+      "id": "UC-138",
+      "title": "Jev gate before risky tool calls",
       "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-017-intent-domain-routing.md",
-      "one_line": "Classify intent and domain to set routing rules and thresholds.",
+      "source": "x",
+      "primary_url": "https://x.com/Zain_qurashi_/status/2101312512859709904",
+      "date": "2026-09-19",
+      "file": "UC-138-jev-gate-before-risky-tool-calls.md",
+      "one_line": "A concrete deployment pattern puts Jev before shell, deploy, and other irreversible tool calls, runs it in shadow mode for a week, then automates only the low-risk path rather than replacing the LLM.",
       "primitives": [
-        "choice"
-      ],
-      "open_source": false
+        "choice",
+        "noul"
+      ]
     },
     {
-      "id": "UC-018",
-      "title": "Estimate difficulty and risk of prompts",
+      "id": "UC-139",
+      "title": "Google Flights automation demo",
       "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-018-difficulty-risk-estimate.md",
-      "one_line": "Estimate prompt difficulty/risk before escalating to expensive models.",
+      "source": "x",
+      "primary_url": "https://x.com/masahirochaen/status/2101312078627659898",
+      "date": "2026-09-19",
+      "file": "UC-139-google-flights-automation-demo.md",
+      "one_line": "A Japanese Jev article/demo shows an AI operating Google Flights and finding flights in about seven seconds at normal playback speed, alongside a 20-use-case/API guide.",
       "primitives": [
-        "score"
-      ],
-      "open_source": false
+        "choice",
+        "noul"
+      ]
     },
     {
-      "id": "UC-019",
-      "title": "Escalate hard requests to expensive models",
+      "id": "UC-140",
+      "title": "24/7 HFT trading design",
       "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-019-escalate-expensive-model.md",
-      "one_line": "Escalate only requests that need a more capable/expensive model.",
+      "source": "x",
+      "primary_url": "https://x.com/RohOnChain/status/2101311813908652069",
+      "date": "2026-09-19",
+      "file": "UC-140-24-7-hft-trading-design.md",
+      "one_line": "The author describes a Jev-based high-frequency trading design with calibrated buy/sell decisions under 100 ms and one decision per block, with a from-scratch implementation article.",
       "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-020",
-      "title": "Jailbreak and prompt-injection detection",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-020-jailbreak-injection-detect.md",
-      "one_line": "Detect jailbreaks and prompt injection on LLM inputs at a fraction of LLM cost.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-021",
-      "title": "Policy violation and sensitive-data checks",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-021-policy-sensitive-data.md",
-      "one_line": "Identify policy violations and sensitive-data exposure on I/O.",
-      "primitives": [
+        "choice",
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
-      "id": "UC-022",
-      "title": "Tool-call error detection",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-022-tool-call-error-detect.md",
-      "one_line": "Detect tool-call errors and response-quality failures in real time.",
+      "id": "UC-146",
+      "title": "Support inbox and driving simulation",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/kavehmz/status/2101307328498704654",
+      "date": "2026-09-19",
+      "file": "UC-146-support-inbox-and-driving-simulation.md",
+      "one_line": "In a week of hands-on experiments, the author used Jev with a support inbox and a driving simulation to show typed decisions and probabilities in practical application flows.",
       "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-023",
-      "title": "Structured guardrail logging",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-023-guardrail-structured-logs.md",
-      "one_line": "Log structured check results and probabilities for harness failure tracing.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-024",
-      "title": "Semantic code linting in CI",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-024-semantic-code-lint-ci.md",
-      "one_line": "Add semantic lints for team coding conventions and writing guidelines in CI.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-025",
-      "title": "Probabilistic NL features for ML",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-025-nl-features-for-ml.md",
-      "one_line": "Extract probabilistic features from natural language for predictive models.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-026",
-      "title": "Autoresearch feature discovery loop",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-026-autoresearch-features.md",
-      "one_line": "Propose feature definitions and evaluate predictive value on held-out truth.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-027",
-      "title": "Resume and interview criteria scoring",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-027-recruiting-criteria-score.md",
-      "one_line": "Evaluate resumes/applications/interview feedback against job criteria.",
-      "primitives": [
-        "score",
+        "choice",
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
-      "id": "UC-028",
-      "title": "Candidate\\u2013role matching and routing",
+      "id": "UC-149",
+      "title": "Jev drives the dre diagram editor",
       "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-028-candidate-role-routing.md",
-      "one_line": "Match candidates to roles and route to hiring managers; escalate uncertain cases.",
+      "source": "x",
+      "primary_url": "https://x.com/ElaichMarouane/status/2101314158612672740",
+      "date": "2026-09-19",
+      "file": "UC-149-jev-drives-the-dre-diagram-editor.md",
+      "one_line": "In a working demo, plain-English sentences build diagrams in the keyboard-first dre editor; Jev makes each decision in roughly 0.6 seconds and the app presses the corresponding keys.",
       "primitives": [
         "choice",
         "noul"
-      ],
-      "open_source": false
+      ]
     },
     {
-      "id": "UC-029",
-      "title": "ICP lead matching",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-029-icp-lead-match.md",
-      "one_line": "Match company profiles and inbound messages to an ideal customer profile.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-030",
-      "title": "Buyer intent and pain-point detection",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-030-buyer-intent-detect.md",
-      "one_line": "Detect buyer relevance, pain points, and purchase intent; prioritize leads.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-031",
-      "title": "Support ticket multi-axis classify",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-031-ticket-multi-axis.md",
-      "one_line": "Classify tickets by issue, product area, and customer intent.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-032",
-      "title": "Call transcript issue/commitment extraction",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-032-call-transcript-extract.md",
-      "one_line": "Extract issues, commitments, and follow-ups from call transcripts.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-033",
-      "title": "Urgency, frustration, churn, refund signals",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-033-support-risk-signals.md",
-      "one_line": "Detect urgency, frustration, churn risk, and refund requests on tickets.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-034",
-      "title": "Support queue and automation routing",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-034-support-queue-routing.md",
-      "one_line": "Route cases to team, queue, or automated workflow.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-035",
-      "title": "Verify support replies vs policy",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-035-verify-support-replies.md",
-      "one_line": "Verify support responses against policies and the customer request.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-036",
-      "title": "Insurance FNOL classification",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-036-insurance-fnol-classify.md",
-      "one_line": "Classify first-notice-of-loss, adjuster notes, and supporting docs.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-037",
-      "title": "Claim complexity, missing info, fraud flags",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-037-claim-fraud-complexity.md",
-      "one_line": "Detect claim complexity, missing information, and potential fraud indicators.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-038",
-      "title": "Straight-through vs specialist claim routing",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-038-claim-stp-routing.md",
-      "one_line": "Prioritize claims for STP or specialist review; escalate uncertain cases.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-039",
-      "title": "AML/KYC suspicious narrative scoring",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-039-aml-kyc-suspicion.md",
-      "one_line": "Evaluate transaction narratives, KYC docs, and alert histories for suspicion.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-040",
-      "title": "Entity match across inconsistent names",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-040-entity-name-match.md",
-      "one_line": "Match entities across inconsistent names, profiles, and records.",
-      "primitives": [
-        "score",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-041",
-      "title": "Financial alert prioritization",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-041-fincrime-alert-priority.md",
-      "one_line": "Prioritize alerts by risk, relevance, and evidence quality.",
-      "primitives": [
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-042",
-      "title": "Contract and filing classification",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-042-legal-doc-classify.md",
-      "one_line": "Classify contracts, policies, regulatory filings, and marketing claims.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-043",
-      "title": "Missing clauses and prohibited claims",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-043-missing-clauses-detect.md",
-      "one_line": "Detect missing clauses, prohibited claims, and policy violations.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-044",
-      "title": "Legal requirement verification",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-044-legal-req-verify.md",
-      "one_line": "Verify documents against explicit legal or compliance requirements.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-045",
-      "title": "Product listing normalize/classify",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-045-listing-normalize.md",
-      "one_line": "Classify and normalize product listings across inconsistent seller catalogs.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-046",
-      "title": "Product attribute extraction",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-046-product-attr-extract.md",
-      "one_line": "Extract product attributes from titles and descriptions.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-047",
-      "title": "Counterfeit, review abuse, prohibited listings",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-047-marketplace-trust-safety.md",
-      "one_line": "Detect prohibited listings, counterfeit signals, review abuse, policy violations.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-048",
-      "title": "Nuanced community moderation",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-048-community-moderation.md",
-      "one_line": "Apply company-specific criteria to decide which posts meet moderation standards.",
-      "primitives": [
-        "choice",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-049",
-      "title": "Toxicity, spam, PII, opt-out detection",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-049-toxicity-spam-pii.md",
-      "one_line": "Detect toxicity, harassment, spam, fraud, unsafe advice, PII, opt-outs.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-050",
-      "title": "Severity\\u00d7confidence allow/warn/block",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-050-severity-confidence-actions.md",
-      "one_line": "Combine severity and confidence to allow, warn, review, or block.",
-      "primitives": [
-        "score",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-051",
-      "title": "Ad brand safety and suitability",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-051-ad-brand-safety.md",
-      "one_line": "Classify brand safety and audience suitability for creatives and placements.",
-      "primitives": [
-        "choice",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-052",
-      "title": "Ad regulatory claim compliance",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-052-ad-reg-compliance.md",
-      "one_line": "Check regulatory compliance and prohibited claims in ads.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-053",
-      "title": "Creative quality and LP alignment",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-053-ad-lp-alignment.md",
-      "one_line": "Evaluate creative quality and ad-to-landing-page alignment.",
-      "primitives": [
-        "score",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-054",
-      "title": "Game chat abuse moderation",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-054-game-chat-mod.md",
-      "one_line": "Moderate in-game chat; detect abuse, toxicity, suspicious behavior.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-055",
-      "title": "Player frustration and engagement scoring",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-055-player-frustration-score.md",
-      "one_line": "Annotate content and score frustration or engagement from reports/reviews.",
-      "primitives": [
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-056",
-      "title": "Player churn and support routing",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-056-player-churn-routing.md",
-      "one_line": "Detect churn signals and route player-support requests.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-057",
-      "title": "Incident-to-risk probabilistic indicators",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-057-incident-risk-indicators.md",
-      "one_line": "Convert incident reports and vendor assessments into probabilistic risk indicators.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-058",
-      "title": "Underwriting risk type classification",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-058-underwriting-risk-type.md",
-      "one_line": "Classify risk types and detect suspicious characteristics for underwriting.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-059",
-      "title": "Demand forecasting semantic enrichment",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-059-demand-forecast-signals.md",
-      "one_line": "Enrich forecasts with purchase intent, urgency, and product interest from text.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-060",
-      "title": "Supply/competitive pressure themes",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-060-supply-competitive-themes.md",
-      "one_line": "Detect supply concerns, competitive pressure, and emerging demand themes.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-061",
-      "title": "KG relationship and entity typing",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-061-kg-relation-typing.md",
-      "one_line": "Classify relationships and entity types when annotating knowledge graphs.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-062",
-      "title": "Contradiction detection in records",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
-      "date": null,
-      "file": "UC-062-kg-contradiction-detect.md",
-      "one_line": "Detect contradictions between records or claims in a knowledge graph.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-063",
-      "title": "Self-consistency Noul review gating",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook.md",
-      "date": null,
-      "file": "UC-063-cookbook-consistency-noul.md",
-      "one_line": "Route uncertain Noul probabilities to human review while keeping underlying values visible.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-064",
-      "title": "Self-consistency Choice moderation",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook.md",
-      "date": null,
-      "file": "UC-064-cookbook-consistency-choice.md",
-      "one_line": "Add uncertain outcome to moderation; compare label agreement with share of automatic actions.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-065",
-      "title": "Parallel regulatory briefing questions",
+      "id": "UC-150",
+      "title": "Jev plays Manic Miner",
       "category": "other",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/parallel_questions.md",
-      "date": null,
-      "file": "UC-065-cookbook-parallel-questions.md",
-      "one_line": "Batch many questions (e.g. 13 GDPR briefing Qs) in one call\\u2014cheaper and faster with same answers.",
+      "source": "x",
+      "primary_url": "https://x.com/MrBananas/status/2101314152337686764",
+      "date": "2026-09-19",
+      "file": "UC-150-jev-plays-manic-miner.md",
+      "one_line": "A quick experiment wires Jev into the retro game Manic Miner and publishes a video showing the model selecting gameplay actions.",
       "primitives": [
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
+      ]
     },
     {
-      "id": "UC-066",
-      "title": "Legal BM25 + TypeSafe rerank (CLERC)",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe.md",
-      "date": null,
-      "file": "UC-066-cookbook-legal-rerank.md",
-      "one_line": "Rerank BM25 shortlists with one question per query\\u2013candidate pair to lift legal retrieval accuracy.",
-      "primitives": [
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-067",
-      "title": "Line-by-line semantic document search",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/semantic_find.md",
-      "date": null,
-      "file": "UC-067-cookbook-semantic-find.md",
-      "one_line": "Score ToS line IDs against a plain-language query; Noul checks whether an answer exists.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-068",
-      "title": "Recover Markdown structure from plain text",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/autoformat.md",
-      "date": null,
-      "file": "UC-068-cookbook-autoformat.md",
-      "one_line": "Stitch hard-wrapped lines and classify blocks (heading, list, code, callout) with companion questions.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-069",
-      "title": "Map NL trading requests to typed functions",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/function_calling.md",
-      "date": null,
-      "file": "UC-069-cookbook-function-calling.md",
-      "one_line": "Map function names and closed-set args to confidence-aware questions for ordinary typed functions.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-070",
-      "title": "Agent skill suggestion from large catalog",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/skill_suggestion.md",
-      "date": null,
-      "file": "UC-070-cookbook-skill-suggestion.md",
-      "one_line": "Rank Hermes catalog skills and decide whether a turn needs a skill at all.",
-      "primitives": [
-        "choice",
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-071",
-      "title": "Beer catalogue entity alignment",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/entity_alignment.md",
-      "date": null,
-      "file": "UC-071-cookbook-entity-alignment.md",
-      "one_line": "Score candidate pairs as merge / leave unlinked / hand to curator across two catalogues.",
-      "primitives": [
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-072",
-      "title": "Classify RAG passages for injection/contradiction",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/classifying_rag_passages.md",
-      "date": null,
-      "file": "UC-072-cookbook-rag-passage-class.md",
-      "one_line": "Score retrieved passages; keep/flag contradictions; drop hidden instructions or injections.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-073",
-      "title": "Double-check citations against source",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/citation_check.md",
-      "date": null,
-      "file": "UC-073-cookbook-citation-check.md",
-      "one_line": "Choice whether quote context supports the claim; confidence flags for human review.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-074",
-      "title": "LLM I/O hazard guardrails battery",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/llm_guardrails.md",
-      "date": null,
-      "file": "UC-074-cookbook-llm-guardrails.md",
-      "one_line": "Noul hazards + severity Score on every LLM input/output; threshold to pass/review/block/support.",
-      "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-075",
-      "title": "SDE cascade mini\\u2192verify\\u2192reason",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/sde_cascade.md",
-      "date": null,
-      "file": "UC-075-cookbook-sde-cascade.md",
-      "one_line": "Two-stage structured-data-extraction cascade for big-model quality at lower cost.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-076",
-      "title": "Date part extraction then code resolve",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/date_extraction_cookbook.md",
-      "date": null,
-      "file": "UC-076-cookbook-date-extract.md",
-      "one_line": "Ask TypeSafe for named date parts, resolve/validate in code with confidence-based review.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-077",
-      "title": "Regex candidates + TypeSafe span pick",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook.md",
-      "date": null,
-      "file": "UC-077-cookbook-preparsed-values.md",
-      "one_line": "Regex finds emails/phones/amounts; TypeSafe selects the requested span for verbatim normalize.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-078",
-      "title": "Hierarchical beam-search classification",
+      "id": "UC-151",
+      "title": "Classifier.dev over Jev for routing and RAG filters",
       "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/hierarchical_classification.md",
-      "date": null,
-      "file": "UC-078-cookbook-hier-class.md",
-      "one_line": "Classify through deep patent/retail/biomed/code hierarchies via beam search on Choice probs.",
+      "source": "x",
+      "primary_url": "https://x.com/TheGoldenAnvil/status/2101314147145089461",
+      "date": "2026-09-19",
+      "file": "UC-151-classifier-dev-over-jev-for-routing-and-rag-filters.md",
+      "one_line": "A no-key HTTP service built underneath TypeSafe's Jev accepts text plus labels and returns a label and confidence for up to 1,000 items per call; the linked explainer demonstrates routing, RAG filtering, and log classification.",
       "primitives": [
-        "choice"
-      ],
-      "open_source": false
+        "choice",
+        "noul"
+      ]
     },
     {
-      "id": "UC-079",
-      "title": "Autoresearch \\u2192 CatBoost features",
-      "category": "extraction",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery.md",
-      "date": null,
-      "file": "UC-079-cookbook-autoresearch-catboost.md",
-      "one_line": "Autoresearch loop proposes TypeSafe questions as numeric features for a CatBoost regressor.",
+      "id": "UC-152",
+      "title": "Inquiry-form routing",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/with291/status/2101314108184478029",
+      "date": "2026-09-19",
+      "file": "UC-152-inquiry-form-routing.md",
+      "one_line": "A live Japanese demo classifies and routes the contents of incoming form inquiries with Jev, showing the resulting workflow board at monbankun.hellocraftai.com.",
       "primitives": [
-        "noul",
-        "score"
-      ],
-      "open_source": false
+        "choice",
+        "noul"
+      ]
     },
     {
-      "id": "UC-080",
-      "title": "SEC report industry Classification + confidence",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/cookbooks/classification_using_confidence.md",
-      "date": null,
-      "file": "UC-080-cookbook-sec-confidence.md",
-      "one_line": "Classify SEC annual reports into industry groups; use confidence to fall back to broader division.",
+      "id": "UC-153",
+      "title": "Kalshi trading lab",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/VargasAntoni81/status/2101309135262208501",
+      "date": "2026-09-19",
+      "file": "UC-153-kalshi-trading-lab.md",
+      "one_line": "A live Kalshi lab feeds BTC and ETH market data into Jev, applies code-enforced risk limits, and lets viewers watch 44 typed decisions choose, wait, and reassess; median response time is reported as 380 ms.",
       "primitives": [
-        "choice"
-      ],
-      "open_source": false
+        "choice",
+        "noul"
+      ]
     },
     {
-      "id": "UC-081",
-      "title": "Speculative fan-out many questions",
+      "id": "UC-158",
+      "title": "Bounded routing with cheap abstention",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/efeduduu/status/2101313709192999115",
+      "date": "2026-09-19",
+      "file": "UC-158-bounded-routing-with-cheap-abstention.md",
+      "one_line": "A concrete guardrail design uses Jev for bounded, high-confidence routing and hands cases whose rationale changes the action to an LLM; abstention keeps out-of-lane questions cheap.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-159",
+      "title": "Typed Jev API as a decision layer",
       "category": "other",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/patterns/fan-out.md",
-      "date": null,
-      "file": "UC-081-pattern-fan-out.md",
-      "one_line": "Send many speculative questions in one call; code decides which answers matter.",
+      "source": "x",
+      "primary_url": "https://x.com/nicdunz/status/2101314246327849279",
+      "date": "2026-09-19",
+      "file": "UC-159-typed-jev-api-as-a-decision-layer.md",
+      "one_line": "The post highlights production-oriented Jev API capabilities beyond plain classification: yes/no questions with probabilities, numeric scoring, mixed question types in one request, and structured state input.",
       "primitives": [
         "choice",
         "noul",
         "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-082",
-      "title": "Confidence-gated act vs escalate",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/patterns/confidence-routing.md",
-      "date": null,
-      "file": "UC-082-pattern-confidence-routing.md",
-      "one_line": "Use answer for what and confidence for whether to act or escalate.",
-      "primitives": [
-        "choice",
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-083",
-      "title": "Composite weighted scoring",
-      "category": "ranking",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/patterns/composite-scoring.md",
-      "date": null,
-      "file": "UC-083-pattern-composite-scoring.md",
-      "one_line": "Break complex judgment into atomic scores; combine with code-owned weights.",
-      "primitives": [
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-084",
-      "title": "Intent routing to code/LLM/human",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/patterns/intent-routing.md",
-      "date": null,
-      "file": "UC-084-pattern-intent-routing.md",
-      "one_line": "Classify requests and route to deterministic logic, specialist LLM, or human.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-085",
-      "title": "Smart-home request evaluation demo",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://docs.typesafe.ai/demos/smart-home.md",
-      "date": null,
-      "file": "UC-085-demo-smart-home.md",
-      "one_line": "Demo: evaluate smart-home user requests with typed System One questions.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-086",
-      "title": "OCR screen \\u2192 next computer action",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
-      "date": "2026-09-17",
-      "file": "UC-086-computer-use-ocr-actions.md",
-      "one_line": "Community typesafe-computer-use: OCR the screen then classify the next desktop/computer action (~$0.0002/step).",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-087",
-      "title": "Emulator Mario from structured state",
-      "category": "other",
-      "source": "docs",
-      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
-      "date": "2026-09-17",
-      "file": "UC-087-typesafe-mario-emulator.md",
-      "one_line": "Community typesafe-mario: play Super Mario Bros from structured emulator state (same shape as Doom demo).",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-088",
-      "title": "Staged code-review workflow (jev-review)",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
-      "date": "2026-09-17",
-      "file": "UC-088-jev-review-code.md",
-      "one_line": "Community jev-review: staged code-review workflow with local dashboard using typed review questions.",
-      "primitives": [
-        "noul",
-        "score",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-089",
-      "title": "Software factory orchestration (foreman)",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
-      "date": "2026-09-17",
-      "file": "UC-089-foreman-orchestration.md",
-      "one_line": "Community foreman: orchestration layer for a software factory making typed progress/quality decisions.",
-      "primitives": [
-        "choice",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-090",
-      "title": "LangChain model-routing middleware",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://www.langchain.com/blog/building-a-harness-with-jev",
-      "date": "2026-09-17",
-      "file": "UC-090-langchain-model-router.md",
-      "one_line": "LangChain TypeSafe middleware: Jev assesses the user message and selects fast vs powerful model for the run.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-091",
-      "title": "LangChain AutoMode dangerous-tool guard",
-      "category": "moderation",
-      "source": "docs",
-      "primary_url": "https://www.langchain.com/blog/building-a-harness-with-jev",
-      "date": "2026-09-17",
-      "file": "UC-091-langchain-automode-guard.md",
-      "one_line": "AutoModeMiddleware uses Jev to classify risky tool calls (e.g. bash) and block before execution.",
-      "primitives": [
-        "noul",
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-092",
-      "title": "Email triage at scale (Ryan Vogel)",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://www.langchain.com/blog/building-a-harness-with-jev",
-      "date": "2026-09-17",
-      "file": "UC-092-email-triage-vogel.md",
-      "one_line": "Public LangChain writeup cites Ryan Vogel doing email triage at scale with Jev decisions.",
-      "primitives": [
-        "choice",
-        "noul",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-093",
-      "title": "Support department routing (Cloudflare Workers AI)",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://developers.cloudflare.com/workers-ai/models/typesafe/jev/",
-      "date": null,
-      "file": "UC-093-cf-support-dept-routing.md",
-      "one_line": "Cloudflare docs example: route support requests to billing/tech/other with Choice on login/payout failures.",
-      "primitives": [
-        "choice"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-094",
-      "title": "Structured refund review (Cloudflare)",
-      "category": "verification",
-      "source": "docs",
-      "primary_url": "https://developers.cloudflare.com/workers-ai/models/typesafe/jev/",
-      "date": null,
-      "file": "UC-094-cf-refund-review.md",
-      "one_line": "Evaluate refund requests against order+policy with Noul/Choice/Score in Workers AI example.",
-      "primitives": [
-        "noul",
-        "choice",
-        "score"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-095",
-      "title": "Account risk escalation (Cloudflare)",
-      "category": "routing",
-      "source": "docs",
-      "primary_url": "https://developers.cloudflare.com/workers-ai/models/typesafe/jev/",
-      "date": null,
-      "file": "UC-095-cf-account-risk.md",
-      "one_line": "Score account risk and Noul whether activity warrants immediate escalation.",
-      "primitives": [
-        "score",
-        "noul"
-      ],
-      "open_source": false
-    },
-    {
-      "id": "UC-096",
-      "title": "Newsletter sponsor inquiry filter",
-      "category": "classification",
-      "source": "docs",
-      "primary_url": "https://flaviocopes.com/jev/",
-      "date": null,
-      "file": "UC-096-newsletter-sponsor-filter.md",
-      "one_line": "Flavio Copes pattern: Noul for real sponsorship inquiry, Choice for category, Score for ask specificity.",
-      "primitives": [
-        "noul",
-        "choice",
-        "score"
-      ],
-      "open_source": false
+      ]
     },
     {
       "id": "UC-132",
@@ -2005,6 +995,1260 @@
       ],
       "open_source": true,
       "github_url": "https://github.com/mkotlikov/jev-grug"
+    },
+    {
+      "id": "UC-006",
+      "title": "Semantic search replace/supplement embeddings",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-006-rag-semantic-search.md",
+      "one_line": "Replace or supplement embeddings in RAG with semantic search, scoring, and ranking over candidates.",
+      "primitives": [
+        "score",
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-007",
+      "title": "Query\\u2013candidate relevance scoring",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-007-query-candidate-relevance.md",
+      "one_line": "Score how well each retrieved candidate answers the query before generation.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-008",
+      "title": "Pairwise result reranking",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-008-pairwise-rerank.md",
+      "one_line": "Rerank shortlists with pairwise comparisons using TypeSafe questions.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-009",
+      "title": "Cross-encode query and candidate",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-009-cross-encode-precision.md",
+      "one_line": "Cross-encode query+candidate for higher precision than bi-encoders alone.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-010",
+      "title": "Select useful context for downstream AI",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-010-select-useful-context.md",
+      "one_line": "Pick which snippets are useful enough to pass into an LLM or agent step.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-011",
+      "title": "Systematic review paper screening",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-011-systematic-review-screening.md",
+      "one_line": "Screen papers against inclusion/exclusion criteria for systematic reviews.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-012",
+      "title": "Qualitative theme labeling",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-012-qual-theme-labeling.md",
+      "one_line": "Label interview transcripts, surveys, and field notes with predefined themes.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-013",
+      "title": "Claim\\u2013citation support check (science)",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-013-science-citation-support.md",
+      "one_line": "Check whether cited passages support claims in manuscripts and summaries.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-014",
+      "title": "Flag missing methodological details",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-014-missing-methods-flag.md",
+      "one_line": "Flag missing controls, dataset descriptions, and experimental settings.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-015",
+      "title": "Research knowledge-graph entity linking",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-015-research-kg-linking.md",
+      "one_line": "Identify entities and relationships across papers linking findings to passages.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-016",
+      "title": "Custom LLM model router",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-016-custom-llm-router.md",
+      "one_line": "Build a router that chooses which LLM receives each prompt using Jev.",
+      "primitives": [
+        "choice",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-017",
+      "title": "Intent and domain classification for routing",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-017-intent-domain-routing.md",
+      "one_line": "Classify intent and domain to set routing rules and thresholds.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-018",
+      "title": "Estimate difficulty and risk of prompts",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-018-difficulty-risk-estimate.md",
+      "one_line": "Estimate prompt difficulty/risk before escalating to expensive models.",
+      "primitives": [
+        "score"
+      ]
+    },
+    {
+      "id": "UC-019",
+      "title": "Escalate hard requests to expensive models",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-019-escalate-expensive-model.md",
+      "one_line": "Escalate only requests that need a more capable/expensive model.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-020",
+      "title": "Jailbreak and prompt-injection detection",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-020-jailbreak-injection-detect.md",
+      "one_line": "Detect jailbreaks and prompt injection on LLM inputs at a fraction of LLM cost.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-021",
+      "title": "Policy violation and sensitive-data checks",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-021-policy-sensitive-data.md",
+      "one_line": "Identify policy violations and sensitive-data exposure on I/O.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-022",
+      "title": "Tool-call error detection",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-022-tool-call-error-detect.md",
+      "one_line": "Detect tool-call errors and response-quality failures in real time.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-023",
+      "title": "Structured guardrail logging",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-023-guardrail-structured-logs.md",
+      "one_line": "Log structured check results and probabilities for harness failure tracing.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-024",
+      "title": "Semantic code linting in CI",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-024-semantic-code-lint-ci.md",
+      "one_line": "Add semantic lints for team coding conventions and writing guidelines in CI.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-025",
+      "title": "Probabilistic NL features for ML",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-025-nl-features-for-ml.md",
+      "one_line": "Extract probabilistic features from natural language for predictive models.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-026",
+      "title": "Autoresearch feature discovery loop",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-026-autoresearch-features.md",
+      "one_line": "Propose feature definitions and evaluate predictive value on held-out truth.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-027",
+      "title": "Resume and interview criteria scoring",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-027-recruiting-criteria-score.md",
+      "one_line": "Evaluate resumes/applications/interview feedback against job criteria.",
+      "primitives": [
+        "score",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-028",
+      "title": "Candidate\\u2013role matching and routing",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-028-candidate-role-routing.md",
+      "one_line": "Match candidates to roles and route to hiring managers; escalate uncertain cases.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-029",
+      "title": "ICP lead matching",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-029-icp-lead-match.md",
+      "one_line": "Match company profiles and inbound messages to an ideal customer profile.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-030",
+      "title": "Buyer intent and pain-point detection",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-030-buyer-intent-detect.md",
+      "one_line": "Detect buyer relevance, pain points, and purchase intent; prioritize leads.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-031",
+      "title": "Support ticket multi-axis classify",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-031-ticket-multi-axis.md",
+      "one_line": "Classify tickets by issue, product area, and customer intent.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-032",
+      "title": "Call transcript issue/commitment extraction",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-032-call-transcript-extract.md",
+      "one_line": "Extract issues, commitments, and follow-ups from call transcripts.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-033",
+      "title": "Urgency, frustration, churn, refund signals",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-033-support-risk-signals.md",
+      "one_line": "Detect urgency, frustration, churn risk, and refund requests on tickets.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-034",
+      "title": "Support queue and automation routing",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-034-support-queue-routing.md",
+      "one_line": "Route cases to team, queue, or automated workflow.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-035",
+      "title": "Verify support replies vs policy",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-035-verify-support-replies.md",
+      "one_line": "Verify support responses against policies and the customer request.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-036",
+      "title": "Insurance FNOL classification",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-036-insurance-fnol-classify.md",
+      "one_line": "Classify first-notice-of-loss, adjuster notes, and supporting docs.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-037",
+      "title": "Claim complexity, missing info, fraud flags",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-037-claim-fraud-complexity.md",
+      "one_line": "Detect claim complexity, missing information, and potential fraud indicators.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-038",
+      "title": "Straight-through vs specialist claim routing",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-038-claim-stp-routing.md",
+      "one_line": "Prioritize claims for STP or specialist review; escalate uncertain cases.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-039",
+      "title": "AML/KYC suspicious narrative scoring",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-039-aml-kyc-suspicion.md",
+      "one_line": "Evaluate transaction narratives, KYC docs, and alert histories for suspicion.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-040",
+      "title": "Entity match across inconsistent names",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-040-entity-name-match.md",
+      "one_line": "Match entities across inconsistent names, profiles, and records.",
+      "primitives": [
+        "score",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-041",
+      "title": "Financial alert prioritization",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-041-fincrime-alert-priority.md",
+      "one_line": "Prioritize alerts by risk, relevance, and evidence quality.",
+      "primitives": [
+        "score"
+      ]
+    },
+    {
+      "id": "UC-042",
+      "title": "Contract and filing classification",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-042-legal-doc-classify.md",
+      "one_line": "Classify contracts, policies, regulatory filings, and marketing claims.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-043",
+      "title": "Missing clauses and prohibited claims",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-043-missing-clauses-detect.md",
+      "one_line": "Detect missing clauses, prohibited claims, and policy violations.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-044",
+      "title": "Legal requirement verification",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-044-legal-req-verify.md",
+      "one_line": "Verify documents against explicit legal or compliance requirements.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-045",
+      "title": "Product listing normalize/classify",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-045-listing-normalize.md",
+      "one_line": "Classify and normalize product listings across inconsistent seller catalogs.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-046",
+      "title": "Product attribute extraction",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-046-product-attr-extract.md",
+      "one_line": "Extract product attributes from titles and descriptions.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-047",
+      "title": "Counterfeit, review abuse, prohibited listings",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-047-marketplace-trust-safety.md",
+      "one_line": "Detect prohibited listings, counterfeit signals, review abuse, policy violations.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-048",
+      "title": "Nuanced community moderation",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-048-community-moderation.md",
+      "one_line": "Apply company-specific criteria to decide which posts meet moderation standards.",
+      "primitives": [
+        "choice",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-049",
+      "title": "Toxicity, spam, PII, opt-out detection",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-049-toxicity-spam-pii.md",
+      "one_line": "Detect toxicity, harassment, spam, fraud, unsafe advice, PII, opt-outs.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-050",
+      "title": "Severity\\u00d7confidence allow/warn/block",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-050-severity-confidence-actions.md",
+      "one_line": "Combine severity and confidence to allow, warn, review, or block.",
+      "primitives": [
+        "score",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-051",
+      "title": "Ad brand safety and suitability",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-051-ad-brand-safety.md",
+      "one_line": "Classify brand safety and audience suitability for creatives and placements.",
+      "primitives": [
+        "choice",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-052",
+      "title": "Ad regulatory claim compliance",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-052-ad-reg-compliance.md",
+      "one_line": "Check regulatory compliance and prohibited claims in ads.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-053",
+      "title": "Creative quality and LP alignment",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-053-ad-lp-alignment.md",
+      "one_line": "Evaluate creative quality and ad-to-landing-page alignment.",
+      "primitives": [
+        "score",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-054",
+      "title": "Game chat abuse moderation",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-054-game-chat-mod.md",
+      "one_line": "Moderate in-game chat; detect abuse, toxicity, suspicious behavior.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-055",
+      "title": "Player frustration and engagement scoring",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-055-player-frustration-score.md",
+      "one_line": "Annotate content and score frustration or engagement from reports/reviews.",
+      "primitives": [
+        "score"
+      ]
+    },
+    {
+      "id": "UC-056",
+      "title": "Player churn and support routing",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-056-player-churn-routing.md",
+      "one_line": "Detect churn signals and route player-support requests.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-057",
+      "title": "Incident-to-risk probabilistic indicators",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-057-incident-risk-indicators.md",
+      "one_line": "Convert incident reports and vendor assessments into probabilistic risk indicators.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-058",
+      "title": "Underwriting risk type classification",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-058-underwriting-risk-type.md",
+      "one_line": "Classify risk types and detect suspicious characteristics for underwriting.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-059",
+      "title": "Demand forecasting semantic enrichment",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-059-demand-forecast-signals.md",
+      "one_line": "Enrich forecasts with purchase intent, urgency, and product interest from text.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-060",
+      "title": "Supply/competitive pressure themes",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-060-supply-competitive-themes.md",
+      "one_line": "Detect supply concerns, competitive pressure, and emerging demand themes.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-061",
+      "title": "KG relationship and entity typing",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-061-kg-relation-typing.md",
+      "one_line": "Classify relationships and entity types when annotating knowledge graphs.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-062",
+      "title": "Contradiction detection in records",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
+      "date": null,
+      "file": "UC-062-kg-contradiction-detect.md",
+      "one_line": "Detect contradictions between records or claims in a knowledge graph.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-063",
+      "title": "Self-consistency Noul review gating",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook.md",
+      "date": null,
+      "file": "UC-063-cookbook-consistency-noul.md",
+      "one_line": "Route uncertain Noul probabilities to human review while keeping underlying values visible.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-064",
+      "title": "Self-consistency Choice moderation",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook.md",
+      "date": null,
+      "file": "UC-064-cookbook-consistency-choice.md",
+      "one_line": "Add uncertain outcome to moderation; compare label agreement with share of automatic actions.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-065",
+      "title": "Parallel regulatory briefing questions",
+      "category": "other",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/parallel_questions.md",
+      "date": null,
+      "file": "UC-065-cookbook-parallel-questions.md",
+      "one_line": "Batch many questions (e.g. 13 GDPR briefing Qs) in one call\\u2014cheaper and faster with same answers.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-066",
+      "title": "Legal BM25 + TypeSafe rerank (CLERC)",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe.md",
+      "date": null,
+      "file": "UC-066-cookbook-legal-rerank.md",
+      "one_line": "Rerank BM25 shortlists with one question per query\\u2013candidate pair to lift legal retrieval accuracy.",
+      "primitives": [
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-067",
+      "title": "Line-by-line semantic document search",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/semantic_find.md",
+      "date": null,
+      "file": "UC-067-cookbook-semantic-find.md",
+      "one_line": "Score ToS line IDs against a plain-language query; Noul checks whether an answer exists.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-068",
+      "title": "Recover Markdown structure from plain text",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/autoformat.md",
+      "date": null,
+      "file": "UC-068-cookbook-autoformat.md",
+      "one_line": "Stitch hard-wrapped lines and classify blocks (heading, list, code, callout) with companion questions.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-069",
+      "title": "Map NL trading requests to typed functions",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/function_calling.md",
+      "date": null,
+      "file": "UC-069-cookbook-function-calling.md",
+      "one_line": "Map function names and closed-set args to confidence-aware questions for ordinary typed functions.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-070",
+      "title": "Agent skill suggestion from large catalog",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/skill_suggestion.md",
+      "date": null,
+      "file": "UC-070-cookbook-skill-suggestion.md",
+      "one_line": "Rank Hermes catalog skills and decide whether a turn needs a skill at all.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-071",
+      "title": "Beer catalogue entity alignment",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/entity_alignment.md",
+      "date": null,
+      "file": "UC-071-cookbook-entity-alignment.md",
+      "one_line": "Score candidate pairs as merge / leave unlinked / hand to curator across two catalogues.",
+      "primitives": [
+        "score"
+      ]
+    },
+    {
+      "id": "UC-072",
+      "title": "Classify RAG passages for injection/contradiction",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/classifying_rag_passages.md",
+      "date": null,
+      "file": "UC-072-cookbook-rag-passage-class.md",
+      "one_line": "Score retrieved passages; keep/flag contradictions; drop hidden instructions or injections.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-073",
+      "title": "Double-check citations against source",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/citation_check.md",
+      "date": null,
+      "file": "UC-073-cookbook-citation-check.md",
+      "one_line": "Choice whether quote context supports the claim; confidence flags for human review.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-074",
+      "title": "LLM I/O hazard guardrails battery",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/llm_guardrails.md",
+      "date": null,
+      "file": "UC-074-cookbook-llm-guardrails.md",
+      "one_line": "Noul hazards + severity Score on every LLM input/output; threshold to pass/review/block/support.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-075",
+      "title": "SDE cascade mini\\u2192verify\\u2192reason",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/sde_cascade.md",
+      "date": null,
+      "file": "UC-075-cookbook-sde-cascade.md",
+      "one_line": "Two-stage structured-data-extraction cascade for big-model quality at lower cost.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-076",
+      "title": "Date part extraction then code resolve",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/date_extraction_cookbook.md",
+      "date": null,
+      "file": "UC-076-cookbook-date-extract.md",
+      "one_line": "Ask TypeSafe for named date parts, resolve/validate in code with confidence-based review.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-077",
+      "title": "Regex candidates + TypeSafe span pick",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook.md",
+      "date": null,
+      "file": "UC-077-cookbook-preparsed-values.md",
+      "one_line": "Regex finds emails/phones/amounts; TypeSafe selects the requested span for verbatim normalize.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-078",
+      "title": "Hierarchical beam-search classification",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/hierarchical_classification.md",
+      "date": null,
+      "file": "UC-078-cookbook-hier-class.md",
+      "one_line": "Classify through deep patent/retail/biomed/code hierarchies via beam search on Choice probs.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-079",
+      "title": "Autoresearch \\u2192 CatBoost features",
+      "category": "extraction",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery.md",
+      "date": null,
+      "file": "UC-079-cookbook-autoresearch-catboost.md",
+      "one_line": "Autoresearch loop proposes TypeSafe questions as numeric features for a CatBoost regressor.",
+      "primitives": [
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-080",
+      "title": "SEC report industry Classification + confidence",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/cookbooks/classification_using_confidence.md",
+      "date": null,
+      "file": "UC-080-cookbook-sec-confidence.md",
+      "one_line": "Classify SEC annual reports into industry groups; use confidence to fall back to broader division.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-081",
+      "title": "Speculative fan-out many questions",
+      "category": "other",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/patterns/fan-out.md",
+      "date": null,
+      "file": "UC-081-pattern-fan-out.md",
+      "one_line": "Send many speculative questions in one call; code decides which answers matter.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-082",
+      "title": "Confidence-gated act vs escalate",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/patterns/confidence-routing.md",
+      "date": null,
+      "file": "UC-082-pattern-confidence-routing.md",
+      "one_line": "Use answer for what and confidence for whether to act or escalate.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-083",
+      "title": "Composite weighted scoring",
+      "category": "ranking",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/patterns/composite-scoring.md",
+      "date": null,
+      "file": "UC-083-pattern-composite-scoring.md",
+      "one_line": "Break complex judgment into atomic scores; combine with code-owned weights.",
+      "primitives": [
+        "score"
+      ]
+    },
+    {
+      "id": "UC-084",
+      "title": "Intent routing to code/LLM/human",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/patterns/intent-routing.md",
+      "date": null,
+      "file": "UC-084-pattern-intent-routing.md",
+      "one_line": "Classify requests and route to deterministic logic, specialist LLM, or human.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-085",
+      "title": "Smart-home request evaluation demo",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://docs.typesafe.ai/demos/smart-home.md",
+      "date": null,
+      "file": "UC-085-demo-smart-home.md",
+      "one_line": "Demo: evaluate smart-home user requests with typed System One questions.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-086",
+      "title": "OCR screen \\u2192 next computer action",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
+      "date": "2026-09-17",
+      "file": "UC-086-computer-use-ocr-actions.md",
+      "one_line": "Community typesafe-computer-use: OCR the screen then classify the next desktop/computer action (~$0.0002/step).",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-087",
+      "title": "Emulator Mario from structured state",
+      "category": "other",
+      "source": "docs",
+      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
+      "date": "2026-09-17",
+      "file": "UC-087-typesafe-mario-emulator.md",
+      "one_line": "Community typesafe-mario: play Super Mario Bros from structured emulator state (same shape as Doom demo).",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-088",
+      "title": "Staged code-review workflow (jev-review)",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
+      "date": "2026-09-17",
+      "file": "UC-088-jev-review-code.md",
+      "one_line": "Community jev-review: staged code-review workflow with local dashboard using typed review questions.",
+      "primitives": [
+        "noul",
+        "score",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-089",
+      "title": "Software factory orchestration (foreman)",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
+      "date": "2026-09-17",
+      "file": "UC-089-foreman-orchestration.md",
+      "one_line": "Community foreman: orchestration layer for a software factory making typed progress/quality decisions.",
+      "primitives": [
+        "choice",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-090",
+      "title": "LangChain model-routing middleware",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+      "date": "2026-09-17",
+      "file": "UC-090-langchain-model-router.md",
+      "one_line": "LangChain TypeSafe middleware: Jev assesses the user message and selects fast vs powerful model for the run.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-091",
+      "title": "LangChain AutoMode dangerous-tool guard",
+      "category": "moderation",
+      "source": "docs",
+      "primary_url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+      "date": "2026-09-17",
+      "file": "UC-091-langchain-automode-guard.md",
+      "one_line": "AutoModeMiddleware uses Jev to classify risky tool calls (e.g. bash) and block before execution.",
+      "primitives": [
+        "noul",
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-092",
+      "title": "Email triage at scale (Ryan Vogel)",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+      "date": "2026-09-17",
+      "file": "UC-092-email-triage-vogel.md",
+      "one_line": "Public LangChain writeup cites Ryan Vogel doing email triage at scale with Jev decisions.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-093",
+      "title": "Support department routing (Cloudflare Workers AI)",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://developers.cloudflare.com/workers-ai/models/typesafe/jev/",
+      "date": null,
+      "file": "UC-093-cf-support-dept-routing.md",
+      "one_line": "Cloudflare docs example: route support requests to billing/tech/other with Choice on login/payout failures.",
+      "primitives": [
+        "choice"
+      ]
+    },
+    {
+      "id": "UC-094",
+      "title": "Structured refund review (Cloudflare)",
+      "category": "verification",
+      "source": "docs",
+      "primary_url": "https://developers.cloudflare.com/workers-ai/models/typesafe/jev/",
+      "date": null,
+      "file": "UC-094-cf-refund-review.md",
+      "one_line": "Evaluate refund requests against order+policy with Noul/Choice/Score in Workers AI example.",
+      "primitives": [
+        "noul",
+        "choice",
+        "score"
+      ]
+    },
+    {
+      "id": "UC-095",
+      "title": "Account risk escalation (Cloudflare)",
+      "category": "routing",
+      "source": "docs",
+      "primary_url": "https://developers.cloudflare.com/workers-ai/models/typesafe/jev/",
+      "date": null,
+      "file": "UC-095-cf-account-risk.md",
+      "one_line": "Score account risk and Noul whether activity warrants immediate escalation.",
+      "primitives": [
+        "score",
+        "noul"
+      ]
+    },
+    {
+      "id": "UC-096",
+      "title": "Newsletter sponsor inquiry filter",
+      "category": "classification",
+      "source": "docs",
+      "primary_url": "https://flaviocopes.com/jev/",
+      "date": null,
+      "file": "UC-096-newsletter-sponsor-filter.md",
+      "one_line": "Flavio Copes pattern: Noul for real sponsorship inquiry, Choice for category, Score for ask specificity.",
+      "primitives": [
+        "noul",
+        "choice",
+        "score"
+      ]
     }
   ]
 }
