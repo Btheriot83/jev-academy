@@ -8,53 +8,53 @@ export type CurriculumLesson = {
   sources: { label: string; url: string }[];
 };
 
-/** Visible 0→7 path (home checklist + next-action CTA). */
+/** Visible 0 to 7 path (home checklist + next-action CTA). */
 export const PATH_STEPS = [
   {
     id: "0",
-    title: "What Jev is (not an LLM) + when to use it",
+    title: "What Jev is (it is not an LLM) and when to use it",
     href: "/lessons/what-system-one-is",
     lessonIds: ["what-system-one-is", "when-to-use-jev"],
   },
   {
     id: "1",
-    title: "Verify TYPESAFE_API_KEY (never display secrets)",
+    title: "Check your TYPESAFE_API_KEY (keep it secret)",
     href: "/lessons/credentials",
     lessonIds: ["credentials"],
   },
   {
     id: "2",
-    title: "First System One call (curl + JS + Python)",
+    title: "Make your first System One call (curl, JS, and Python)",
     href: "/lessons/first-api-call",
     lessonIds: ["first-api-call", "state"],
   },
   {
     id: "3",
-    title: "Choice / Noul / Score labs",
+    title: "Labs for Choice, Noul, and Score",
     href: "/labs",
     lessonIds: ["noul", "choice", "score"],
   },
   {
     id: "4",
-    title: "Confidence + when to escalate",
+    title: "Confidence and when to escalate",
     href: "/lessons/confidence",
     lessonIds: ["confidence"],
   },
   {
     id: "5",
-    title: "Fan-out / patterns",
+    title: "Fan-out and other patterns",
     href: "/lessons/fan-out",
     lessonIds: ["fan-out", "patterns", "sdk-labs"],
   },
   {
     id: "6",
-    title: "Pick a use-case → map to your projects",
+    title: "Pick a use case and map it to your projects",
     href: "/use-cases",
     lessonIds: ["project-labs"],
   },
   {
     id: "7",
-    title: "Ship into a real repo",
+    title: "Ship it into a real repo",
     href: "/ship",
     lessonIds: ["ship"],
   },
@@ -68,7 +68,7 @@ export const LESSONS: CurriculumLesson[] = [
     pathStep: 0,
     title: "What System One is",
     summary:
-      "Jev vs LLMs: typed judgments and probabilities for software, not generated text. RLCD framing.",
+      "Jev is built for software, not chat. It answers typed questions with structured answers and probabilities.",
     href: "/lessons/what-system-one-is",
     sources: [
       { label: "Introduction", url: "https://docs.typesafe.ai/introduction.md" },
@@ -80,9 +80,9 @@ export const LESSONS: CurriculumLesson[] = [
     id: "when-to-use-jev",
     step: 2,
     pathStep: 0,
-    title: "When to use Jev vs an LLM vs code",
+    title: "When to use Jev, an LLM, or plain code",
     summary:
-      "Code owns workflow. Jev for narrow semantic decisions; LLM for generation; keep deterministic work in code.",
+      "Code runs the workflow. Jev makes quick judgment calls. LLMs do the writing. Keep fixed-rule work in plain code.",
     href: "/lessons/when-to-use-jev",
     sources: [
       { label: "How to build", url: "https://docs.typesafe.ai/concepts/how-to-build-with-system-one.md" },
@@ -94,9 +94,9 @@ export const LESSONS: CurriculumLesson[] = [
     id: "credentials",
     step: 3,
     pathStep: 1,
-    title: "Credentials & key verification",
+    title: "Set up and check your API key",
     summary:
-      "Dashboard key → env TYPESAFE_API_KEY. Verify without printing the secret.",
+      "Make a dashboard key, store it as TYPESAFE_API_KEY, and check it works without ever printing it.",
     href: "/lessons/credentials",
     sources: [
       { label: "Quick start", url: "https://docs.typesafe.ai/introduction/quickstart.md" },
@@ -107,8 +107,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "first-api-call",
     step: 3,
     pathStep: 2,
-    title: "First HTTP call",
-    summary: "POST /v1/systemone with state + one Noul — curl, JS, Python.",
+    title: "Make your first API call",
+    summary: "Send state plus one Noul question to POST /v1/systemone. Examples in curl, JavaScript, and Python.",
     href: "/lessons/first-api-call",
     sources: [
       { label: "Quick start", url: "https://docs.typesafe.ai/introduction/quickstart.md" },
@@ -121,8 +121,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "state",
     step: 4,
     pathStep: 2,
-    title: "State craft",
-    summary: "String vs object vs array; only relevant context; separate facts from questions.",
+    title: "State: what gets judged",
+    summary: "State is the material the model judges. Send it as a string, an object, or an array. Only include what the questions need. Keep facts in the state and judgments in the questions.",
     href: "/lessons/state",
     sources: [{ label: "State", url: "https://docs.typesafe.ai/concepts/state.md" }],
   },
@@ -130,8 +130,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "noul",
     step: 5,
     pathStep: 3,
-    title: "Noul",
-    summary: "P(yes) in [0,1]; optional true/false criteria; no confidence field.",
+    title: "Noul: yes or no questions",
+    summary: "Noul answers a yes/no question with a number from 0 to 1. Higher means more likely yes. Optional criteria fields let you define yes and no. There is no confidence field.",
     href: "/lessons/noul",
     sources: [
       { label: "Noul", url: "https://docs.typesafe.ai/primitives/noul.md" },
@@ -142,8 +142,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "choice",
     step: 6,
     pathStep: 3,
-    title: "Choice",
-    summary: "Closed-set routing; probabilities + confidence; add other/none when needed.",
+    title: "Choice: pick one from the menu",
+    summary: "Choice picks one option from a fixed list. You get the pick, per-option probabilities, and a confidence. Add other or none when the list might not cover every input.",
     href: "/lessons/choice",
     sources: [{ label: "Choice", url: "https://docs.typesafe.ai/primitives/choice.md" }],
   },
@@ -151,8 +151,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "score",
     step: 7,
     pathStep: 3,
-    title: "Score",
-    summary: "Ordered rubric; expectation between levels; avoid for exact magnitude (jaggedness).",
+    title: "Score: rate it with a rubric",
+    summary: "Score rates something against an ordered rubric, like star ratings. The result can land between levels. Don't use it for exact counts, math, or dates.",
     href: "/lessons/score",
     sources: [
       { label: "Score", url: "https://docs.typesafe.ai/primitives/score.md" },
@@ -163,8 +163,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "confidence",
     step: 8,
     pathStep: 4,
-    title: "Confidence as a second axis",
-    summary: "Act / caution / escalate; risk-scaled thresholds. Answer = what; confidence = whether.",
+    title: "Confidence: how sure before you act",
+    summary: "Every answer tells you what. Confidence tells you whether to act on it. High means go, medium means check, low means hand it to a human.",
     href: "/lessons/confidence",
     sources: [
       { label: "Confidence", url: "https://docs.typesafe.ai/confidence.md" },
@@ -175,8 +175,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "fan-out",
     step: 9,
     pathStep: 5,
-    title: "Fan-out & parallel questions",
-    summary: "Many questions one call; ignore speculative answers in code; cost/latency win.",
+    title: "Fan-out: many questions, one call",
+    summary: "Ask many questions in one call, even ones you might not need. Your code picks which answers matter. It's cheaper and faster than one call per question.",
     href: "/lessons/fan-out",
     sources: [
       { label: "Fan-out", url: "https://docs.typesafe.ai/patterns/fan-out.md" },
@@ -187,8 +187,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "patterns",
     step: 10,
     pathStep: 5,
-    title: "Compose patterns",
-    summary: "Intent routing, composite scoring, advanced structure in criteria.",
+    title: "Combine patterns in code",
+    summary: "Four patterns to mix and match: intent routing, composite scoring, confidence-gated routing, and fan-out. Instructions and criteria can also take JSON.",
     href: "/lessons/patterns",
     sources: [
       { label: "Intent routing", url: "https://docs.typesafe.ai/patterns/intent-routing.md" },
@@ -200,8 +200,8 @@ export const LESSONS: CurriculumLesson[] = [
     id: "sdk-labs",
     step: 11,
     pathStep: 5,
-    title: "SDK labs",
-    summary: "JS @typesafe-ai/sdk and Python typesafe-sdk; models list; agent skill optional.",
+    title: "SDK labs: JavaScript and Python",
+    summary: "Install the JavaScript or Python SDK. Send one document plus a Choice, a Noul, and a Score in a single call. Then pick a model.",
     href: "/lessons/sdk-labs",
     sources: [
       { label: "JS SDK", url: "https://docs.typesafe.ai/sdk/javascript.md" },
@@ -214,9 +214,9 @@ export const LESSONS: CurriculumLesson[] = [
     id: "project-labs",
     step: 12,
     pathStep: 6,
-    title: "Capstone project labs",
+    title: "Capstone labs: practice only",
     summary:
-      "AZMDR routing, newsletter triage, app intake, Fit Desk adherence — conceptual only. Do not touch those repos.",
+      "Four practice labs: request routing, newsletter triage, app intake, and Fit Desk adherence. Learning only. Do not touch the real product repos.",
     href: "/lessons/project-labs",
     sources: [
       { label: "Intent routing", url: "https://docs.typesafe.ai/patterns/intent-routing.md" },

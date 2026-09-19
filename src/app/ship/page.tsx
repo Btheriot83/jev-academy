@@ -8,17 +8,17 @@ export default function ShipPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-semibold">Ship into a real repo</h1>
+        <h1 className="text-2xl font-semibold">Ship it into a real repo</h1>
         <p className="mt-2 text-[var(--muted)]">
-          Checklist for moving a lab into Grind-Horse (or any private repo). Codex + the{" "}
-          <code className="text-[var(--ink)]">typesafe-ai</code> skill are already available
-          there — this site does not call product repos.
+          This checklist walks you through moving a lab into Grind-Horse or any private repo. Codex
+          and the <code className="text-[var(--ink)]">typesafe-ai</code> skill are already available
+          there. This site does not call product repos.
         </p>
       </div>
 
       <ol className="list-decimal space-y-4 pl-5 text-[var(--ink)]">
         <li>
-          <strong>Confirm the key locally</strong> — length / models status only; never print the
+          <strong>Confirm the key locally</strong> — length and models status only; never print the
           secret. See{" "}
           <Link href="/lessons/credentials" className="underline">
             Credentials
@@ -38,20 +38,19 @@ export default function ShipPage() {
           <code>POST https://api.typesafe.ai/v1/systemone</code> (or the JS/Python SDK).
         </li>
         <li>
-          <strong>Gate on confidence</strong> (Choice/Score) before auto-acting; escalate low
-          confidence.
+          <strong>Gate on confidence</strong> (Choice/Score) before you auto-act. Escalate when
+          confidence is low.
         </li>
         <li>
-          <strong>Install the skill in the target repo</strong> (if not already):
+          <strong>Install the skill in the target repo</strong> (if it is not there already):
           <CodeBlock
             label="bash"
             code={`npx skills add typesafe-ai/skills --skill typesafe-ai\n# or Claude Code plugin install per docs.typesafe.ai/agent-skill.md`}
           />
         </li>
         <li>
-          <strong>Deploy this academy</strong> on Vercel free tier: import{" "}
-          <code>Btheriot83/jev-academy</code>, framework Next.js, no env vars required for the
-          public UI.
+          <strong>Deploy this academy</strong> on the Vercel free tier: import{" "}
+          <code>Btheriot83/jev-academy</code>, pick Next.js, and skip env vars for the public UI.
         </li>
       </ol>
 
@@ -62,7 +61,7 @@ export default function ShipPage() {
       <div className="flex flex-wrap items-center gap-3">
         <MarkDone ids={["ship"]} label="Mark path step 7 done" />
         <Link href="/" className="text-sm text-[var(--muted)] hover:text-[var(--ink)]">
-          ← Home
+          Home
         </Link>
       </div>
     </div>

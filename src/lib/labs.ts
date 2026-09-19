@@ -14,9 +14,9 @@ const AUTH = "$TYPESAFE_API_KEY";
 export const LABS: Lab[] = [
   {
     id: "choice",
-    title: "Choice — closed-set routing",
+    title: "Choice: pick one from a set",
     theme: "Primitive",
-    summary: "Pick one option from a defined set. Read choice, probabilities, and confidence in code.",
+    summary: "Think of a menu with fixed options. You give Jev the list, and it picks one. Your code then reads the choice, the probabilities, and the confidence.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -68,8 +68,8 @@ const data = await res.json();
 console.log(data.answers.department.choice);
 console.log(data.answers.department.confidence);`,
     notes: [
-      "Response fields for Choice: type, choice, probabilities, confidence (see API reference).",
-      "Never log or echo the API key.",
+      "A Choice response has these fields: type, choice, probabilities, and confidence. See the API reference for details.",
+      "Never log or print the API key.",
     ],
     sources: [
       { label: "Choice", url: "https://docs.typesafe.ai/primitives/choice.md" },
@@ -78,9 +78,9 @@ console.log(data.answers.department.confidence);`,
   },
   {
     id: "noul",
-    title: "Noul — yes/no probability",
+    title: "Noul: a yes/no answer with a probability",
     theme: "Primitive",
-    summary: "Ask a yes/no question; get noul in [0, 1] as P(yes).",
+    summary: "Ask a yes/no question. You get a number from 0 to 1. That number is the chance the answer is yes. It is like a gut check with odds attached.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -130,8 +130,8 @@ if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
 const data = await res.json();
 console.log(data.answers.urgency.noul);`,
     notes: [
-      "Noul answers return type + noul (0–1). Docs do not attach a confidence field to Noul answers.",
-      "Sample state adapted from the public Quick start.",
+      "A Noul answer returns type and noul, a number from 0 to 1. The docs do not attach a confidence field to Noul answers.",
+      "The sample state is adapted from the public Quick start.",
     ],
     sources: [
       { label: "Noul", url: "https://docs.typesafe.ai/primitives/noul.md" },
@@ -140,9 +140,9 @@ console.log(data.answers.urgency.noul);`,
   },
   {
     id: "score",
-    title: "Score — ordered rubric",
+    title: "Score: rate on a rubric",
     theme: "Primitive",
-    summary: "Rate along ordered levels; get a weighted score, legend, probabilities, confidence.",
+    summary: "Think of a 1-to-5 star rubric. You set ordered levels, and Jev rates against them. You get back a score, a legend, probabilities, and confidence.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -186,8 +186,8 @@ const data = await res.json();
 console.log(data.answers.frustration.score);
 console.log(data.answers.frustration.confidence);`,
     notes: [
-      "Score criteria is an ordered array (at least two levels).",
-      "Response: score, legend, probabilities, confidence.",
+      "Score criteria is an ordered array. It needs at least two levels.",
+      "The response gives you: score, legend, probabilities, and confidence.",
     ],
     sources: [
       { label: "Score", url: "https://docs.typesafe.ai/primitives/score.md" },
@@ -196,9 +196,9 @@ console.log(data.answers.frustration.confidence);`,
   },
   {
     id: "confidence",
-    title: "Confidence-gated routing",
+    title: "Confidence gates: act, review, or escalate",
     theme: "Pattern",
-    summary: "Use Choice confidence as a second axis: act, review, or escalate.",
+    summary: "The answer tells you what to do. Confidence tells you how sure you can be before you act. High confidence: act. Middle: have someone review. Low: escalate to a human.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -259,8 +259,8 @@ if (confidence >= ACTION_THRESHOLD) {
   console.log("review", { choice, confidence });
 }`,
     notes: [
-      "Answer tells you what; confidence tells you whether to act (docs: Confidence-gated routing).",
-      "Pick thresholds for your risk tolerance in application code.",
+      "The answer tells you what. Confidence tells you whether to act on it. See the docs page 'Confidence-gated routing'.",
+      "Set your own thresholds in your app code. Pick them based on how much risk you can take.",
     ],
     sources: [
       { label: "Confidence", url: "https://docs.typesafe.ai/confidence.md" },
@@ -272,9 +272,9 @@ if (confidence >= ACTION_THRESHOLD) {
   },
   {
     id: "fan-out",
-    title: "Speculative fan-out",
+    title: "Fan-out: ask many questions at once",
     theme: "Pattern",
-    summary: "Ask several questions in one call; compose and ignore in code.",
+    summary: "Like working down a checklist. You ask several small questions in one call. Then your code uses the answers it needs and ignores the rest.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -357,8 +357,8 @@ console.log({
   frustration: answers.frustration.score,
 });`,
     notes: [
-      "Questions evaluate in parallel against the same state (Introduction / fan-out docs).",
-      "Request body shape matches the public Quick start sample.",
+      "The questions run in parallel against the same state. See the Introduction and fan-out docs.",
+      "The request body matches the public Quick start sample.",
     ],
     sources: [
       { label: "Fan-out", url: "https://docs.typesafe.ai/patterns/fan-out.md" },
@@ -367,10 +367,10 @@ console.log({
   },
   {
     id: "azmdr-routing",
-    title: "AZMDR-style intent routing (conceptual)",
+    title: "Intent routing, AZMDR style (conceptual)",
     theme: "Project lab",
     summary:
-      "Classify an inbound request and route to deterministic logic, specialist handling, or human review. Example theme only — do not touch AZMDR repos.",
+      "Sort each incoming request into a bucket. Then send it to plain code, a specialist step, or a human. This is a learning example only. Do not touch AZMDR repos.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -446,8 +446,8 @@ if (human > 0.6 || conf < 0.55) console.log("route: human_queue", { intent, conf
 else if (intent === "report") console.log("route: report_pipeline", { intent });
 else console.log("route: specialist", { intent });`,
     notes: [
-      "Conceptual lab only. Maps to AZMDR-style request routing as a learning example.",
-      "Pattern: Intent routing — classify then hand off to code / LLM / human.",
+      "This is a concept lab only. It uses AZMDR-style request routing as a learning example.",
+      "The pattern is intent routing: classify first, then hand off to code, an LLM, or a human.",
     ],
     sources: [
       { label: "Intent routing", url: "https://docs.typesafe.ai/patterns/intent-routing.md" },
@@ -457,7 +457,7 @@ else console.log("route: specialist", { intent });`,
     id: "newsletter-triage",
     title: "Newsletter triage (conceptual)",
     theme: "Project lab",
-    summary: "Urgency Noul + topic Choice + keep Noul in one call. Example theme only.",
+    summary: "Like sorting mail over a bin. One call asks three things: is it urgent (Noul), what is it about (Choice), and should you keep it (Noul). Example theme only.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -538,8 +538,8 @@ console.log({
   keep: answers.keep.noul,
 });`,
     notes: [
-      "Conceptual lab for newsletter triage. Do not connect to live newsletter repos.",
-      "Compose keep vs archive rules in your code after reading the three answers.",
+      "This is a concept lab. Do not connect it to live newsletter repos.",
+      "After you read the three answers, your code applies the keep or archive rules.",
     ],
     sources: [
       { label: "Fan-out", url: "https://docs.typesafe.ai/patterns/fan-out.md" },
@@ -550,7 +550,7 @@ console.log({
     id: "app-intake",
     title: "App intake moderation (conceptual)",
     theme: "Project lab",
-    summary: "Classify intake submissions; gate on confidence before auto-accept.",
+    summary: "Sort new submissions as they arrive. Only auto-accept when confidence is high enough.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -626,8 +626,8 @@ const conf = answers.category.confidence;
 if (risk >= 1.5 || conf < 0.6) console.log("queue_review", answers);
 else console.log("auto_route", answers.category.choice);`,
     notes: [
-      "Conceptual app-intake lab. Not connected to any production intake system.",
-      "Use Score + Choice confidence together before auto-accepting.",
+      "This is a concept lab. It is not connected to any production intake system.",
+      "Use Score and Choice confidence together before you auto-accept anything.",
     ],
     sources: [
       { label: "Confidence", url: "https://docs.typesafe.ai/confidence.md" },
@@ -636,10 +636,10 @@ else console.log("auto_route", answers.category.choice);`,
   },
   {
     id: "fit-desk",
-    title: "Fit Desk adherence judgment (conceptual)",
+    title: "Fit Desk check-in judgment (conceptual)",
     theme: "Project lab",
     summary:
-      "Judge whether a short check-in indicates adherence. Example theme only — Fit Desk as mapping, not a live integration.",
+      "Read a short check-in message. Judge whether the person is sticking with the plan. Example theme only. This maps to Fit Desk as an example. It is not a live integration.",
     curl: `curl -X POST https://api.typesafe.ai/v1/systemone \\
   -H "Authorization: Bearer ${AUTH}" \\
   -H "Content-Type: application/json" \\
@@ -700,8 +700,8 @@ console.log({
   effortConfidence: answers.effort.confidence,
 });`,
     notes: [
-      "Conceptual Fit Desk adherence example for gallery → project mapping.",
-      "Keep observed check-in text in state; decide coaching actions in code.",
+      "This is a concept example. It shows how to map a gallery idea onto a project, Fit Desk style.",
+      "Keep the check-in text in state. Then decide coaching actions in your code.",
     ],
     sources: [
       { label: "State", url: "https://docs.typesafe.ai/concepts/state.md" },

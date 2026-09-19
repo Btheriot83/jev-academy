@@ -9,7 +9,7 @@ export default function LessonsPage() {
       <div>
         <h1 className="text-2xl font-semibold">Lessons</h1>
         <p className="mt-2 text-[var(--muted)]">
-          Full 12-step curriculum. Home checklist follows the shorter 0→7 path.
+          The full curriculum has 12 steps. The home checklist follows the shorter path, steps 0 to 7.
         </p>
       </div>
       <ol className="space-y-2">

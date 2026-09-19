@@ -13,19 +13,17 @@ export default function HomePage() {
           Public · cites docs.typesafe.ai · no endorsement
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
-          Learn System One. Ship a judgment into your code.
+          Learn System One. Put a judgment in your code.
         </h1>
         <p className="max-w-2xl text-[var(--muted)] leading-relaxed">
-          Jev returns typed answers and probabilities—not essays. This academy walks Brandon
-          Theriot from zero to a copy-paste lab mapped onto real project shapes (routing,
-          triage, intake, adherence). Keys stay in your environment.
+          Jev returns typed answers and probabilities, not essays. This academy walks Brandon Theriot from zero to a copy-paste lab that fits real project shapes: routing, triage, intake, and adherence. Your key stays in your environment.
         </p>
         <NextAction />
       </section>
 
       <section className="space-y-3">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-[var(--muted)]">
-          Path 0 → 7
+          Path 0 to 7
         </h2>
         <PathChecklist />
       </section>
@@ -36,14 +34,14 @@ export default function HomePage() {
           className="rounded-md border border-[var(--border)] bg-[var(--card)] p-4 hover:border-[var(--muted)]"
         >
           <p className="font-medium text-[var(--ink)]">Lessons</p>
-          <p className="mt-1 text-sm text-[var(--muted)]">{LESSONS.length} curriculum steps</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">{LESSONS.length} steps in the curriculum</p>
         </Link>
         <Link
           href="/labs"
           className="rounded-md border border-[var(--border)] bg-[var(--card)] p-4 hover:border-[var(--muted)]"
         >
           <p className="font-medium text-[var(--ink)]">Labs</p>
-          <p className="mt-1 text-sm text-[var(--muted)]">curl + JS · env key only</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">curl and JS. Your key stays in the environment.</p>
         </Link>
         <Link
           href="/use-cases"

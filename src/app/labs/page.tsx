@@ -9,8 +9,7 @@ export default function LabsPage() {
       <div>
         <h1 className="text-2xl font-semibold">Labs</h1>
         <p className="mt-2 text-[var(--muted)]">
-          Copy-paste curl + JS. Uses <code className="text-[var(--ink)]">TYPESAFE_API_KEY</code> from
-          your environment only — never paste keys here. Conceptual project labs do not touch product repos.
+          Copy, paste, and run curl and JS. The labs read <code className="text-[var(--ink)]">TYPESAFE_API_KEY</code> from your environment only. Never paste a key into this site. The conceptual project labs do not touch product repos.
         </p>
       </div>
       <ul className="space-y-2">
