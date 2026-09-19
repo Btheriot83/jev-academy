@@ -1,8 +1,134 @@
 {
-  "count": 96,
-  "x_cited": 5,
+  "count": 135,
+  "x_cited": 40,
   "docs_sourced": 91,
+  "other_sourced": 4,
+  "open_source": 12,
   "cases": [
+    {
+      "id": "UC-005",
+      "title": "Open-source Jev-ify any HF model (SimpleJev)",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/picocreator/status/2101006253829046539",
+      "date": "2026-09-18",
+      "file": "UC-005-simplejev-open-source.md",
+      "one_line": "Builder ships SimpleJev.ai: open-source library to turn any Hugging Face model into Jev-like Choice/Noul/Score API, including vision.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true
+    },
+    {
+      "id": "UC-098",
+      "title": "Fast context compaction scoring (ecosystem roundup)",
+      "category": "extraction",
+      "source": "x",
+      "primary_url": "https://x.com/yibie/status/2101095525793616162",
+      "date": "2026-09-18",
+      "file": "UC-098-fast-context-compaction-scoring-ecosystem-roundup.md",
+      "one_line": "72-hour ecosystem roundup highlighting fast-jev-compaction: Jev scores tool calls/results for relevance and drops unneeded context instead of LLM rewriting history.",
+      "primitives": [
+        "score",
+        "noul"
+      ],
+      "open_source": true
+    },
+    {
+      "id": "UC-100",
+      "title": "Open 151M typed-decision calibration vs Jev",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/heman10x/status/2101094328370155921",
+      "date": "2026-09-18",
+      "file": "UC-100-open-151m-typed-decision-calibration-vs-jev.md",
+      "one_line": "Builder audits LocalLLaMA/typed-decisions harness bugs, then shows a CPU TF-IDF+logistic baseline (11s) beating Jev on ECE and matching customer-service accuracy; shares a reproducible GitHub breakdown.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true
+    },
+    {
+      "id": "UC-113",
+      "title": "BANKING77 classifier evaluation",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/_simonsmith/status/2101084432585134169",
+      "date": "2026-09-18",
+      "file": "UC-113-banking77-classifier-evaluation.md",
+      "one_line": "Compared Jev on the BANKING77 intent dataset, reporting 92.40% accuracy versus 93.66% for a fine-tuned BERT model.",
+      "primitives": [
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/simonmesmith/jev-banking77-experiment"
+    },
+    {
+      "id": "UC-125",
+      "title": "Open-source unkillable Mario (Jev + microsandbox)",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/theappcypher/status/2101098317220401545",
+      "date": "2026-09-18",
+      "file": "UC-125-open-source-unkillable-mario-jev-microsandbox.md",
+      "one_line": "Builder shares mario-never-dies: an unkillable character controlled with Jev decisions plus microsandbox.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/superradcompany/mario-never-dies"
+    },
+    {
+      "id": "UC-129",
+      "title": "CLI and stdio MCP glue",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/mitansh_j07/status/2101096925219188985",
+      "date": "2026-09-18",
+      "file": "UC-129-cli-and-stdio-mcp-glue.md",
+      "one_line": "Reports an unofficial Jev CLI plus stdio MCP with JSON output and uv install as easy-to-try integration glue.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true
+    },
+    {
+      "id": "UC-130",
+      "title": "Open-source Rust port of Jev SDKs",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/OpenAgentsInc/status/2101096899755266306",
+      "date": "2026-09-18",
+      "file": "UC-130-open-source-rust-port-of-jev-sdks.md",
+      "one_line": "OpenAgents open-sources a Rust port of the Jev SDKs under their monorepo and asks TypeSafe for an official Rust SDK.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/OpenAgentsInc/openagents/tree/main/crates/jev"
+    },
+    {
+      "id": "UC-131",
+      "title": "Open-source Jev Ultrafast browser agent",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/gregpr07/status/2100411066966749359",
+      "date": "2026-09-16",
+      "file": "UC-131-open-source-jev-ultrafast-browser-agent.md",
+      "one_line": "Browser Use\\u2019s jev-ultrafast: each DOM snapshot becomes an indexed action space; Jev picks operation and target in one request (small LLM only for TYPE_TEXT). Public demo ~7s Google Flights for ~$0.0039.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/browser-use/jev-ultrafast"
+    },
     {
       "id": "UC-001",
       "title": "Remote browser agent loop (Stagehand + Jev)",
@@ -11,12 +137,13 @@
       "primary_url": "https://x.com/kylejeong/status/2100622054945095934",
       "date": "2026-09-17",
       "file": "UC-001-browser-agent-stagehand.md",
-      "one_line": "Observe a page, send the a11y tree as state with actions as questions; Jev picks the next operation/targets, Stagehand executes\u2014~$0.001 per task at near-instant speed.",
+      "one_line": "Observe a page, send the a11y tree as state with actions as questions; Jev picks the next operation/targets, Stagehand executes\\u2014~$0.001 per task at near-instant speed.",
       "primitives": [
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-002",
@@ -26,10 +153,11 @@
       "primary_url": "https://x.com/jarrodwatts/status/2100356151468585346",
       "date": "2026-09-16",
       "file": "UC-002-jev-trader-monad-kuru.md",
-      "one_line": "Jev chooses buy or sell from an asset price feed each ~300ms Monad block and places post-only limits on Kuru\u2019s on-chain book.",
+      "one_line": "Jev chooses buy or sell from an asset price feed each ~300ms Monad block and places post-only limits on Kuru\\u2019s on-chain book.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-003",
@@ -44,7 +172,8 @@
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-004",
@@ -57,22 +186,415 @@
       "one_line": "Wikiracing demo: among hundreds/thousands of outbound links, Choice picks the next page without hallucinating invented links.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
-      "id": "UC-005",
-      "title": "Open-source Jev-ify any HF model (SimpleJev)",
-      "category": "other",
+      "id": "UC-097",
+      "title": "Bookkeeping outsourcing with constrained choices",
+      "category": "classification",
       "source": "x",
-      "primary_url": "https://x.com/picocreator/status/2101006253829046539",
+      "primary_url": "https://x.com/muramar_u/status/2101096444635804066",
       "date": "2026-09-18",
-      "file": "UC-005-simplejev-open-source.md",
-      "one_line": "Builder ships SimpleJev.ai: open-source library to turn any Hugging Face model into Jev-like Choice/Noul/Score API, including vision.",
+      "file": "UC-097-bookkeeping-outsourcing-with-constrained-choices.md",
+      "one_line": "Japanese post sharing an image summary of how Jev (TypeSafe) could change bookkeeping outsourcing via constrained decisioning (#Jev).",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-099",
+      "title": "Joint email triage decisions",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/exrhizo/status/2101095098134286511",
+      "date": "2026-09-18",
+      "file": "UC-099-joint-email-triage-decisions.md",
+      "one_line": "Shows joint Jev choices for an email: billing vs security and urgent vs not urgent, with probabilities for combined outcomes.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-101",
+      "title": "Rock-paper-scissors Choice/Score demo",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/reiy_leo/status/2101093852744687889",
+      "date": "2026-09-18",
+      "file": "UC-101-rock-paper-scissors-choice-score-demo.md",
+      "one_line": "Demonstrates Jev Noul, Choice, and Score primitives with a rock-paper-scissors example.",
       "primitives": [
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-102",
+      "title": "Multi-axis text classification",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/allenwlee/status/2101093689124962388",
+      "date": "2026-09-18",
+      "file": "UC-102-multi-axis-text-classification.md",
+      "one_line": "Tested Jev through OpenRouter for multi-axis text classification and compared its accuracy against another model.",
+      "primitives": [
+        "choice",
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-103",
+      "title": "Noul probability-composition test",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/vincentgomezjr/status/2101091628211744945",
+      "date": "2026-09-18",
+      "file": "UC-103-noul-probability-composition-test.md",
+      "one_line": "Probed Jev Noul with independent-event probabilities to verify whether combined probabilities match expected composition.",
+      "primitives": [
+        "noul"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-104",
+      "title": "Jev-compatible probability API demo",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/michellechen/status/2101091019487891920",
+      "date": "2026-09-18",
+      "file": "UC-104-jev-compatible-probability-api-demo.md",
+      "one_line": "Built a demo that chooses from predefined answers, normalizes token probabilities into a distribution, and returns them through a Jev-compatible API.",
+      "primitives": [
+        "choice",
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-105",
+      "title": "System One interface approximation",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/michellechen/status/2101091017177055603",
+      "date": "2026-09-18",
+      "file": "UC-105-system-one-interface-approximation.md",
+      "one_line": "Approximates a System One interface using model logits, softmax, and logprobs to return typed probabilities.",
+      "primitives": [
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-106",
+      "title": "Customer-support decisioning",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/michellechen/status/2101091015188685130",
+      "date": "2026-09-18",
+      "file": "UC-106-customer-support-decisioning.md",
+      "one_line": "Uses a support message as state and asks in parallel whether it is urgent, which team handles it, and how frustrated the customer is.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-107",
+      "title": "Agent-driven analysis ranking",
+      "category": "ranking",
+      "source": "x",
+      "primary_url": "https://x.com/jamiegrove/status/2101090621058339001",
+      "date": "2026-09-18",
+      "file": "UC-107-agent-driven-analysis-ranking.md",
+      "one_line": "Feeds raw data and roughly 50 bundled questions to Jev so scores drive the next round of analysis until the important signals emerge.",
+      "primitives": [
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-108",
+      "title": "Parallel support-ticket questions vs sequential LLM",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/AryacChandra/status/2101090103544484311",
+      "date": "2026-09-18",
+      "file": "UC-108-parallel-support-ticket-questions-vs-sequential-llm.md",
+      "one_line": "Explains Jev Choice/Score/Noul and contrasts asking four support questions (urgent, escalate, department, refund) in one parallel call versus sequential ChatGPT answers; also sketches lead classification.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-109",
+      "title": "Sky-color playground decision",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/cliffbaldridge/status/2101089914632991033",
+      "date": "2026-09-18",
+      "file": "UC-109-sky-color-playground-decision.md",
+      "one_line": "Playground test chose Baby Blue vs Electric Blue vs Gray with probabilities in milliseconds; connects the pattern to Doom, automation, routing, and scoring.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-110",
+      "title": "Agent harness routing and AutoMode",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/MAXIMISEART/status/2101088933178474953",
+      "date": "2026-09-18",
+      "file": "UC-110-agent-harness-routing-and-automode.md",
+      "one_line": "Describes Jev changing agent harnesses through model routing and AutoMode classification of tool-use risk.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-111",
+      "title": "Five high-leverage architecture patterns",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/heman10x/status/2101087792902111423",
+      "date": "2026-09-18",
+      "file": "UC-111-five-high-leverage-architecture-patterns.md",
+      "one_line": "Lists tool-call compaction, RAG chunk filtering, browser click selection, shell safety gates, and high-throughput log triage as Jev patterns.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-112",
+      "title": "Ad-library classification at scale (reported)",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/Anni_Maan/status/2101085438849208388",
+      "date": "2026-09-18",
+      "file": "UC-112-ad-library-classification-at-scale-reported.md",
+      "one_line": "Reports a builder demo classifying 1,891 ads in 19 seconds for $0.12 with Jev, and breaks down related decision-model experiments in an X Article.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-114",
+      "title": "Medical AI exploration with System One",
+      "category": "extraction",
+      "source": "x",
+      "primary_url": "https://x.com/RT_AI_lab/status/2101084049813197265",
+      "date": "2026-09-18",
+      "file": "UC-114-medical-ai-exploration-with-system-one.md",
+      "one_line": "Radiology/medical-AI lab notes that System One-style decisioning may fit medical workflows better than text generation, with ongoing verification linked in a Note writeup.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-115",
+      "title": "Getting started after connecting Jev to Codex",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/takamasa045/status/2101083334277484833",
+      "date": "2026-09-18",
+      "file": "UC-115-getting-started-after-connecting-jev-to-codex.md",
+      "one_line": "Builder shares an X Article on getting started with Jev after connecting it in a Codex-oriented workflow.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-116",
+      "title": "Buying-signal triage at million-mention scale",
+      "category": "ranking",
+      "source": "x",
+      "primary_url": "https://x.com/TraffAlex/status/2101083317919445227",
+      "date": "2026-09-18",
+      "file": "UC-116-buying-signal-triage-at-million-mention-scale.md",
+      "one_line": "Explains a large Jev workflow that scores ~1.76M mentions for buying signals, ranks intent/product fit, and drafts replies\\u2014separating marketing claims from the decision-model job.",
+      "primitives": [
+        "choice",
+        "score"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-117",
+      "title": "Agent-action evaluation with Jev",
+      "category": "verification",
+      "source": "x",
+      "primary_url": "https://x.com/coltonpadden/status/2101099621829521546",
+      "date": "2026-09-18",
+      "file": "UC-117-agent-action-evaluation-with-jev.md",
+      "one_line": "Reports Eve reworking LLM-as-judge support so Jev can define evaluations and validate agent actions.",
+      "primitives": [
+        "noul",
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-118",
+      "title": "Codemode and procedures store idea",
+      "category": "other",
+      "source": "x",
+      "primary_url": "https://x.com/crtwithintent/status/2101099490161885473",
+      "date": "2026-09-18",
+      "file": "UC-118-codemode-and-procedures-store-idea.md",
+      "one_line": "Suggests building codemode plus a procedures store around Jev as a practical agent workflow.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-119",
+      "title": "Jev versus Siri command routing",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/wyatdoesathing/status/2101099226197352800",
+      "date": "2026-09-18",
+      "file": "UC-119-jev-versus-siri-command-routing.md",
+      "one_line": "Ran Jev against the 50 most-used macOS Siri commands and found median requests nearly 5x faster including tool calls.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-120",
+      "title": "Selective OCR for chart pages",
+      "category": "extraction",
+      "source": "x",
+      "primary_url": "https://x.com/yoeven/status/2101099095586898089",
+      "date": "2026-09-18",
+      "file": "UC-120-selective-ocr-for-chart-pages.md",
+      "one_line": "Describes processing only pages that need OCR for charts, avoiding OCR on other pages before classification.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-121",
+      "title": "Text-PDF classification gate",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/yoeven/status/2101098898060378405",
+      "date": "2026-09-18",
+      "file": "UC-121-text-pdf-classification-gate.md",
+      "one_line": "Notes Jev can classify text-only PDFs quickly, while PDFs with images/charts still require full OCR first.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-122",
+      "title": "Browser next-click selection",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/ndrezn/status/2101098881287385168",
+      "date": "2026-09-18",
+      "file": "UC-122-browser-next-click-selection.md",
+      "one_line": "Uses Jev to rank all visible anchors and choose the next click, with harness instructions steering it toward the goal.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-123",
+      "title": "Cheap-flight scanning",
+      "category": "ranking",
+      "source": "x",
+      "primary_url": "https://x.com/ndrezn/status/2101098546846113814",
+      "date": "2026-09-18",
+      "file": "UC-123-cheap-flight-scanning.md",
+      "one_line": "Reports success using a Jev repo example to scan for cheap flights across a large time window.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-124",
+      "title": "Multilingual family-assistant routing",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/ahmednadar/status/2101098329622904933",
+      "date": "2026-09-18",
+      "file": "UC-124-multilingual-family-assistant-routing.md",
+      "one_line": "Ran Jev on Loon family-assistant routing tests in English, French, and Arabic, achieving 98%, 100%, and 92% respectively at 164ms median.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-126",
+      "title": "Typeahead UI prediction",
+      "category": "classification",
+      "source": "x",
+      "primary_url": "https://x.com/mikegee/status/2101098282655338995",
+      "date": "2026-09-18",
+      "file": "UC-126-typeahead-ui-prediction.md",
+      "one_line": "Demoed Jev in a typeahead UI that predicts what to update before the user finishes typing.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-127",
+      "title": "Qdrant decision-model integration",
+      "category": "routing",
+      "source": "x",
+      "primary_url": "https://x.com/timgilmour/status/2101098137888682359",
+      "date": "2026-09-18",
+      "file": "UC-127-qdrant-decision-model-integration.md",
+      "one_line": "Plans to integrate Jev with Qdrant as a small, specific decision model.",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-128",
+      "title": "JevSQL angry-ticket predicate",
+      "category": "moderation",
+      "source": "x",
+      "primary_url": "https://x.com/eugeneboondock/status/2101097408578904542",
+      "date": "2026-09-18",
+      "file": "UC-128-jevsql-angry-ticket-predicate.md",
+      "one_line": "Built a SQL predicate, jev_bool(body, 'Is this customer angry?'), for typed natural-language filtering of tickets without embeddings or an LLM writing SQL.",
+      "primitives": [
+        "noul"
+      ],
+      "open_source": false
     },
     {
       "id": "UC-006",
@@ -87,11 +609,12 @@
         "score",
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-007",
-      "title": "Query\u2013candidate relevance scoring",
+      "title": "Query\\u2013candidate relevance scoring",
       "category": "ranking",
       "source": "docs",
       "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
@@ -101,7 +624,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-008",
@@ -115,7 +639,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-009",
@@ -129,7 +654,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-010",
@@ -143,7 +669,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-011",
@@ -157,7 +684,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-012",
@@ -170,11 +698,12 @@
       "one_line": "Label interview transcripts, surveys, and field notes with predefined themes.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-013",
-      "title": "Claim\u2013citation support check (science)",
+      "title": "Claim\\u2013citation support check (science)",
       "category": "verification",
       "source": "docs",
       "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
@@ -184,7 +713,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-014",
@@ -197,7 +727,8 @@
       "one_line": "Flag missing controls, dataset descriptions, and experimental settings.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-015",
@@ -211,7 +742,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-016",
@@ -225,7 +757,8 @@
       "primitives": [
         "choice",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-017",
@@ -238,7 +771,8 @@
       "one_line": "Classify intent and domain to set routing rules and thresholds.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-018",
@@ -251,7 +785,8 @@
       "one_line": "Estimate prompt difficulty/risk before escalating to expensive models.",
       "primitives": [
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-019",
@@ -265,7 +800,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-020",
@@ -279,7 +815,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-021",
@@ -292,7 +829,8 @@
       "one_line": "Identify policy violations and sensitive-data exposure on I/O.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-022",
@@ -306,7 +844,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-023",
@@ -320,7 +859,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-024",
@@ -334,7 +874,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-025",
@@ -348,7 +889,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-026",
@@ -362,7 +904,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-027",
@@ -376,11 +919,12 @@
       "primitives": [
         "score",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-028",
-      "title": "Candidate\u2013role matching and routing",
+      "title": "Candidate\\u2013role matching and routing",
       "category": "routing",
       "source": "docs",
       "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
@@ -390,7 +934,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-029",
@@ -404,7 +949,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-030",
@@ -418,7 +964,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-031",
@@ -431,7 +978,8 @@
       "one_line": "Classify tickets by issue, product area, and customer intent.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-032",
@@ -445,7 +993,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-033",
@@ -459,7 +1008,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-034",
@@ -472,7 +1022,8 @@
       "one_line": "Route cases to team, queue, or automated workflow.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-035",
@@ -486,7 +1037,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-036",
@@ -499,7 +1051,8 @@
       "one_line": "Classify first-notice-of-loss, adjuster notes, and supporting docs.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-037",
@@ -513,7 +1066,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-038",
@@ -527,7 +1081,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-039",
@@ -541,7 +1096,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-040",
@@ -555,7 +1111,8 @@
       "primitives": [
         "score",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-041",
@@ -568,7 +1125,8 @@
       "one_line": "Prioritize alerts by risk, relevance, and evidence quality.",
       "primitives": [
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-042",
@@ -581,7 +1139,8 @@
       "one_line": "Classify contracts, policies, regulatory filings, and marketing claims.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-043",
@@ -594,7 +1153,8 @@
       "one_line": "Detect missing clauses, prohibited claims, and policy violations.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-044",
@@ -608,7 +1168,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-045",
@@ -621,7 +1182,8 @@
       "one_line": "Classify and normalize product listings across inconsistent seller catalogs.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-046",
@@ -635,7 +1197,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-047",
@@ -649,7 +1212,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-048",
@@ -663,7 +1227,8 @@
       "primitives": [
         "choice",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-049",
@@ -677,11 +1242,12 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-050",
-      "title": "Severity\u00d7confidence allow/warn/block",
+      "title": "Severity\\u00d7confidence allow/warn/block",
       "category": "moderation",
       "source": "docs",
       "primary_url": "https://docs.typesafe.ai/concepts/use-case-map.md",
@@ -691,7 +1257,8 @@
       "primitives": [
         "score",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-051",
@@ -705,7 +1272,8 @@
       "primitives": [
         "choice",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-052",
@@ -718,7 +1286,8 @@
       "one_line": "Check regulatory compliance and prohibited claims in ads.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-053",
@@ -732,7 +1301,8 @@
       "primitives": [
         "score",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-054",
@@ -746,7 +1316,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-055",
@@ -759,7 +1330,8 @@
       "one_line": "Annotate content and score frustration or engagement from reports/reviews.",
       "primitives": [
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-056",
@@ -773,7 +1345,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-057",
@@ -787,7 +1360,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-058",
@@ -801,7 +1375,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-059",
@@ -815,7 +1390,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-060",
@@ -828,7 +1404,8 @@
       "one_line": "Detect supply concerns, competitive pressure, and emerging demand themes.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-061",
@@ -841,7 +1418,8 @@
       "one_line": "Classify relationships and entity types when annotating knowledge graphs.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-062",
@@ -854,7 +1432,8 @@
       "one_line": "Detect contradictions between records or claims in a knowledge graph.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-063",
@@ -867,7 +1446,8 @@
       "one_line": "Route uncertain Noul probabilities to human review while keeping underlying values visible.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-064",
@@ -880,7 +1460,8 @@
       "one_line": "Add uncertain outcome to moderation; compare label agreement with share of automatic actions.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-065",
@@ -890,12 +1471,13 @@
       "primary_url": "https://docs.typesafe.ai/cookbooks/parallel_questions.md",
       "date": null,
       "file": "UC-065-cookbook-parallel-questions.md",
-      "one_line": "Batch many questions (e.g. 13 GDPR briefing Qs) in one call\u2014cheaper and faster with same answers.",
+      "one_line": "Batch many questions (e.g. 13 GDPR briefing Qs) in one call\\u2014cheaper and faster with same answers.",
       "primitives": [
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-066",
@@ -905,10 +1487,11 @@
       "primary_url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe.md",
       "date": null,
       "file": "UC-066-cookbook-legal-rerank.md",
-      "one_line": "Rerank BM25 shortlists with one question per query\u2013candidate pair to lift legal retrieval accuracy.",
+      "one_line": "Rerank BM25 shortlists with one question per query\\u2013candidate pair to lift legal retrieval accuracy.",
       "primitives": [
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-067",
@@ -922,7 +1505,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-068",
@@ -936,7 +1520,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-069",
@@ -950,7 +1535,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-070",
@@ -965,7 +1551,8 @@
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-071",
@@ -978,7 +1565,8 @@
       "one_line": "Score candidate pairs as merge / leave unlinked / hand to curator across two catalogues.",
       "primitives": [
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-072",
@@ -992,7 +1580,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-073",
@@ -1005,7 +1594,8 @@
       "one_line": "Choice whether quote context supports the claim; confidence flags for human review.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-074",
@@ -1019,11 +1609,12 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-075",
-      "title": "SDE cascade mini\u2192verify\u2192reason",
+      "title": "SDE cascade mini\\u2192verify\\u2192reason",
       "category": "extraction",
       "source": "docs",
       "primary_url": "https://docs.typesafe.ai/cookbooks/sde_cascade.md",
@@ -1033,7 +1624,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-076",
@@ -1047,7 +1639,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-077",
@@ -1060,7 +1653,8 @@
       "one_line": "Regex finds emails/phones/amounts; TypeSafe selects the requested span for verbatim normalize.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-078",
@@ -1073,11 +1667,12 @@
       "one_line": "Classify through deep patent/retail/biomed/code hierarchies via beam search on Choice probs.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-079",
-      "title": "Autoresearch \u2192 CatBoost features",
+      "title": "Autoresearch \\u2192 CatBoost features",
       "category": "extraction",
       "source": "docs",
       "primary_url": "https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery.md",
@@ -1087,7 +1682,8 @@
       "primitives": [
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-080",
@@ -1100,7 +1696,8 @@
       "one_line": "Classify SEC annual reports into industry groups; use confidence to fall back to broader division.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-081",
@@ -1115,7 +1712,8 @@
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-082",
@@ -1130,7 +1728,8 @@
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-083",
@@ -1143,7 +1742,8 @@
       "one_line": "Break complex judgment into atomic scores; combine with code-owned weights.",
       "primitives": [
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-084",
@@ -1156,7 +1756,8 @@
       "one_line": "Classify requests and route to deterministic logic, specialist LLM, or human.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-085",
@@ -1170,11 +1771,12 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-086",
-      "title": "OCR screen \u2192 next computer action",
+      "title": "OCR screen \\u2192 next computer action",
       "category": "routing",
       "source": "docs",
       "primary_url": "https://virtualuncle.com/jev-typesafe-system-one-model/",
@@ -1184,7 +1786,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-087",
@@ -1198,7 +1801,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-088",
@@ -1213,7 +1817,8 @@
         "noul",
         "score",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-089",
@@ -1227,7 +1832,8 @@
       "primitives": [
         "choice",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-090",
@@ -1240,7 +1846,8 @@
       "one_line": "LangChain TypeSafe middleware: Jev assesses the user message and selects fast vs powerful model for the run.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-091",
@@ -1254,7 +1861,8 @@
       "primitives": [
         "noul",
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-092",
@@ -1269,7 +1877,8 @@
         "choice",
         "noul",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-093",
@@ -1282,7 +1891,8 @@
       "one_line": "Cloudflare docs example: route support requests to billing/tech/other with Choice on login/payout failures.",
       "primitives": [
         "choice"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-094",
@@ -1297,7 +1907,8 @@
         "noul",
         "choice",
         "score"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-095",
@@ -1311,7 +1922,8 @@
       "primitives": [
         "score",
         "noul"
-      ]
+      ],
+      "open_source": false
     },
     {
       "id": "UC-096",
@@ -1326,7 +1938,73 @@
         "noul",
         "choice",
         "score"
-      ]
+      ],
+      "open_source": false
+    },
+    {
+      "id": "UC-132",
+      "title": "Open-source Jev Browser (MCP/CLI + Playwright)",
+      "category": "routing",
+      "source": "other",
+      "primary_url": "https://github.com/jkudish/jev-browser",
+      "date": "2026-09-17",
+      "file": "UC-132-open-source-jev-browser-mcp-cli-playwright.md",
+      "one_line": "jkudish/jev-browser: browser-use tool driving a real headless Chromium via MCP, CLI, or library, with Jev choosing click/type/select/stop. Cited on systemonemodels.org.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/jkudish/jev-browser"
+    },
+    {
+      "id": "UC-133",
+      "title": "Open-source jev-chat command bar (no text generation)",
+      "category": "routing",
+      "source": "other",
+      "primary_url": "https://github.com/w3cj/jev-chat",
+      "date": "2026-09-18",
+      "file": "UC-133-open-source-jev-chat-command-bar-no-text-generation.md",
+      "one_line": "w3cj/jev-chat: chat-shaped command bar that uses Jev Choice/Noul to select tools and never generates free text\\u2014replies come from tool outputs only.",
+      "primitives": [
+        "choice",
+        "noul"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/w3cj/jev-chat"
+    },
+    {
+      "id": "UC-134",
+      "title": "Open-source jev-experiments (~20 latency demos)",
+      "category": "other",
+      "source": "other",
+      "primary_url": "https://github.com/dabit3/jev-experiments",
+      "date": "2026-09-18",
+      "file": "UC-134-open-source-jev-experiments-20-latency-demos.md",
+      "one_line": "dabit3/jev-experiments: monorepo of ~20 self-contained latency-focused demos for routing, moderation, search, native macOS, and real-time control with Choice/Noul/Score.",
+      "primitives": [
+        "choice",
+        "noul",
+        "score"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/dabit3/jev-experiments"
+    },
+    {
+      "id": "UC-135",
+      "title": "Open-source jev-grug Choice word tournament chat",
+      "category": "other",
+      "source": "other",
+      "primary_url": "https://github.com/mkotlikov/jev-grug",
+      "date": "2026-09-17",
+      "file": "UC-135-open-source-jev-grug-choice-word-tournament-chat.md",
+      "one_line": "mkotlikov/jev-grug: toy cave-chat that makes Jev converse by repeatedly choosing the next word from a compact vocabulary (intentional inversion of System One design).",
+      "primitives": [
+        "choice"
+      ],
+      "open_source": true,
+      "github_url": "https://github.com/mkotlikov/jev-grug"
     }
   ]
 }

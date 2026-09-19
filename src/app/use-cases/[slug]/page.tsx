@@ -40,6 +40,11 @@ export default async function UseCasePage({
           <span className={`rounded px-1.5 py-0.5 text-[10px] font-semibold uppercase ${badge}`}>
             {uc.meta.sourceLabel}
           </span>
+          {uc.meta.openSource ? (
+            <span className="rounded bg-emerald-500/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-emerald-300">
+              Open source
+            </span>
+          ) : null}
           <span className="font-mono text-xs text-[var(--muted)]">{uc.meta.id}</span>
           <span className="text-xs uppercase text-[var(--muted)]">{uc.meta.category}</span>
         </div>

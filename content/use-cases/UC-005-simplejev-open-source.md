@@ -11,6 +11,7 @@ source: "x"
 source_urls:
   - "https://x.com/picocreator/status/2101006253829046539"
 date: "2026-09-18"
+open_source: true
 ---
 
 # Open-source Jev-ify any HF model (SimpleJev)
@@ -19,7 +20,8 @@ Builder ships SimpleJev.ai: open-source library to turn any Hugging Face model i
 
 **Category:** `other`  
 **Primitives:** `choice`, `noul`, `score`  
-**Source type:** `x`
+**Source type:** `x`  
+**Open source:** yes  
   
 **Date:** 2026-09-18
 
