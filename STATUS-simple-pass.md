@@ -7,6 +7,8 @@
 
 ## Result
 
+- **Commit SHA:** 
+
 - `npm run build` passes
 - Pushed to `main` on `Btheriot83/jev-academy`
 - Copy rewritten with short sentences, everyday words, and one analogy per lesson
