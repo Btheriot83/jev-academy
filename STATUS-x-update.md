@@ -37,7 +37,7 @@
 - Classifier.dev over Jev for routing and RAG filters
 
 ## Commit
-- SHA: _(filled after push)_
+- SHA: 
 
 ## Notes
 - Public sources only; no fabricated URLs/quotes; no endorsement claim; no API keys.
