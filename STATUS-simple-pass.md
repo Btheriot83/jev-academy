@@ -7,8 +7,8 @@
 
 ## Result
 
-- **Commit SHA:** 
-
+- **Commit SHA (copy rewrite):** `5246ccf74aafb52464a7af1d1989066bb9c15c2d`
+- **Tip of main:** will be filled after this status commit
 - `npm run build` passes
 - Pushed to `main` on `Btheriot83/jev-academy`
 - Copy rewritten with short sentences, everyday words, and one analogy per lesson
@@ -23,8 +23,6 @@
 - `src/app/lessons/page.tsx`
 - `src/app/labs/page.tsx`
 - `STATUS-simple-pass.md` (this file)
-
-## Sample before / after (lesson `noul`)
 
 ## Sample before / after (lesson `noul`)
 
@@ -78,5 +76,6 @@ Open the [Noul lab](/labs/noul) for copy-paste curl and JS.
 ## Notes
 
 - Code fences in lesson bodies were verified identical to pre-rewrite samples.
-- No `→` arrows left in the rewritten prose files (UI chrome on next-links may still use arrows elsewhere).
+- No arrows in the rewritten prose files.
 - No TypeSafe endorsement claims added; disclaimer retained on ship page.
+- Rewrites produced by GLM-5.3 (not hand-invented as primary copy).
