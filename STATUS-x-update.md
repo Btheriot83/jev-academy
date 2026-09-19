@@ -38,7 +38,7 @@
 - Multilingual family-assistant routing
 
 ## Commit
-- SHA: `2346b58ca9a6657f8ea57e5deba8bc4e5d7dbd97`
+- SHA: `3e1304743167ef4626a63ae263c204867e6aa04a`
 
 ## Notes
 - Public sources only; no fabricated URLs/quotes; no endorsement claim; no API keys.
